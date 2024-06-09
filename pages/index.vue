@@ -37,21 +37,13 @@ useSeoMeta({
     </ULandingSection>
 
     <ULandingSection
+      id="pricing"
       :title="page.pricing.title"
       :description="page.pricing.description"
-      :headline="page.pricing.headline"
+      :align="page.pricing.align"
+      class="scroll-mt-[var(--header-height)]"
     >
-      <UPricingGrid
-        id="pricing"
-        compact
-        class="scroll-mt-[calc(var(--header-height)+140px+128px+96px)]"
-      >
-        <UPricingCard
-          v-for="(plan, index) in page.pricing.plans"
-          :key="index"
-          v-bind="plan"
-        />
-      </UPricingGrid>
+      <ImagePlaceholder />
     </ULandingSection>
 
     <ULandingSection

@@ -11,7 +11,6 @@ hero:
       to: #
       target: _blank
 features:
-  headline: Projects
   title: Projects
   description: Some beautiful and very interesting projects that I have worked on.
   items:
@@ -34,56 +33,9 @@ features:
       description: Lorem deserunt et eiusmod. Ea in consectetur minim officia ullamco enim deserunt est.
       icon: i-heroicons-chart-bar
 pricing:
-  headline: Pricing
-  title: A plan for every need
-  description: Pariatur laborum dolor ea commodo sit aute aliquip qui et cillum excepteur.
-  plans:
-    - title: Basic
-      description: A basic plan for individuals.
-      price: $9.99
-      align: top
-      button:
-        label: Get Started
-        color: gray
-      features:
-        - 1 GB Storage
-        - 1 Email Account
-        - 1 Domain
-        - 1 Website
-        - 1 Database
-        - 1 SSL Certificate
-        - 1 Support Ticket
-    - title: Standard
-      description: A standard plan for small teams.
-      price: $19.99
-      highlight: true
-      scale: true
-      align: top
-      button:
-        label: Get Started
-      features:
-        - 10 GB Storage
-        - 10 Email Accounts
-        - 10 Domains
-        - 10 Websites
-        - 10 Databases
-        - 10 SSL Certificates
-        - 10 Support Tickets
-    - title: Premium
-      description: A premium plan for large teams.
-      price: $29.99
-      align: top
-      button:
-        label: Get Started
-        color: gray
-      features:
-        - 100 GB Storage
-        - 100 Email Accounts
-        - 100 Domains
-        - 100 Websites
-        - 100 Databases
-        - 100 SSL Certificates
-        - 100 Support Tickets
+  title: About me
+  description: Pariatur laborum dolor ea commodo sit aute aliquip qui et cillum excepteur
+  align: right
 testimonials:
   headline: Testimonials
   title: What our customers are saying.
