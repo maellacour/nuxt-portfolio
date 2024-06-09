@@ -47,50 +47,14 @@ useSeoMeta({
     </ULandingSection>
 
     <ULandingSection
-      :headline="page.testimonials.headline"
-      :title="page.testimonials.title"
-      :description="page.testimonials.description"
-    >
-      <UPageColumns
-        id="testimonials"
-        class="xl:columns-4 scroll-mt-[calc(var(--header-height)+140px+128px+96px)]"
-      >
-        <div
-          v-for="(testimonial, index) in page.testimonials.items"
-          :key="index"
-          class="break-inside-avoid"
-        >
-          <ULandingTestimonial v-bind="testimonial" />
-        </div>
-      </UPageColumns>
-    </ULandingSection>
-
-    <ULandingSection class="bg-primary-50 dark:bg-primary-400 dark:bg-opacity-10">
-      <ULandingCTA
-        v-bind="page.cta"
-        :card="false"
-      />
-    </ULandingSection>
-
-    <ULandingSection
-      id="faq"
-      :title="page.faq.title"
-      :description="page.faq.description"
+      id="contact"
+      :title="page.contact.title"
+      :description="page.contact.description"
+      :align="page.contact.align"
+      :links="page.contact.links"
       class="scroll-mt-[var(--header-height)]"
     >
-      <ULandingFAQ
-        multiple
-        :items="page.faq.items"
-        :ui="{
-          button: {
-            label: 'font-semibold',
-            trailingIcon: {
-              base: 'w-6 h-6'
-            }
-          }
-        }"
-        class="max-w-4xl mx-auto"
-      />
+      <ImagePlaceholder />
     </ULandingSection>
   </div>
 </template>
