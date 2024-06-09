@@ -10,14 +10,6 @@ hero:
       color: gray
       to: #
       target: _blank
-logos:
-  title: Trusted by the world's best
-  icons:
-    - i-simple-icons-amazonaws
-    - i-simple-icons-heroku
-    - i-simple-icons-netlify
-    - i-simple-icons-vercel
-    - i-simple-icons-cloudflare
 features:
   headline: Features
   title: Why choose our service?
