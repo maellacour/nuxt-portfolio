@@ -21,15 +21,15 @@ useSeoMeta({
     </ULandingHero>
 
     <ULandingSection
-      :title="page.features.title"
-      :description="page.features.description"
+      :title="page.projects.title"
+      :description="page.projects.description"
     >
       <UPageGrid
-        id="features"
+        id="projects"
         class="scroll-mt-[calc(var(--header-height)+140px+128px+96px)]"
       >
         <ULandingCard
-          v-for="(item, index) in page.features.items"
+          v-for="(item, index) in page.projects.items"
           :key="index"
           v-bind="item"
         />
@@ -37,10 +37,10 @@ useSeoMeta({
     </ULandingSection>
 
     <ULandingSection
-      id="pricing"
-      :title="page.pricing.title"
-      :description="page.pricing.description"
-      :align="page.pricing.align"
+      id="aboutme"
+      :title="page.aboutme.title"
+      :description="page.aboutme.description"
+      :align="page.aboutme.align"
       class="scroll-mt-[var(--header-height)]"
     >
       <ImagePlaceholder />

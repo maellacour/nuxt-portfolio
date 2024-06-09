@@ -10,7 +10,7 @@ hero:
       color: gray
       to: #
       target: _blank
-features:
+projects:
   title: Projects
   description: Some beautiful and very interesting projects that I have worked on.
   items:
@@ -32,7 +32,7 @@ features:
     - title: Scalable
       description: Lorem deserunt et eiusmod. Ea in consectetur minim officia ullamco enim deserunt est.
       icon: i-heroicons-chart-bar
-pricing:
+aboutme:
   title: About me
   description: Pariatur laborum dolor ea commodo sit aute aliquip qui et cillum excepteur
   align: right

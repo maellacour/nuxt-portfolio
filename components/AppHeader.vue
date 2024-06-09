@@ -3,33 +3,27 @@ const nuxtApp = useNuxtApp()
 const { activeHeadings, updateHeadings } = useScrollspy()
 
 const links = computed(() => [{
-  label: 'Features',
-  to: '#features',
+  label: 'Projects',
+  to: '#projects',
   icon: 'i-heroicons-cube-transparent',
-  active: activeHeadings.value.includes('features') && !activeHeadings.value.includes('pricing')
+  active: activeHeadings.value.includes('projects') && !activeHeadings.value.includes('aboutme')
 }, {
-  label: 'Pricing',
-  to: '#pricing',
+  label: 'About Me',
+  to: '#aboutme',
   icon: 'i-heroicons-credit-card',
-  active: activeHeadings.value.includes('pricing') && !activeHeadings.value.includes('testimonials')
+  active: activeHeadings.value.includes('aboutme') && !activeHeadings.value.includes('contact')
 }, {
-  label: 'Testimonials',
-  to: '#testimonials',
+  label: 'Contact',
+  to: '#contact',
   icon: 'i-heroicons-academic-cap',
-  active: activeHeadings.value.includes('testimonials')
-}, {
-  label: 'FAQ',
-  to: '#faq',
-  icon: 'i-heroicons-question-mark-circle',
-  active: activeHeadings.value.includes('faq')
+  active: activeHeadings.value.includes('contact')
 }])
 
 nuxtApp.hooks.hookOnce('page:finish', () => {
   updateHeadings([
-    document.querySelector('#features'),
-    document.querySelector('#pricing'),
-    document.querySelector('#testimonials'),
-    document.querySelector('#faq')
+    document.querySelector('#projects'),
+    document.querySelector('#aboutme'),
+    document.querySelector('#contact')
   ])
 })
 </script>
