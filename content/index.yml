@@ -3,10 +3,6 @@ description: A portfolio where I showcase my work on web and Unity development.
 hero:
   title: Hi, I am Mael Lacour
   description: A passionate developer who loves to create beautiful and functional websites and applications. Always looking for new challenges and opportunities to learn and grow.
-  headline:
-    label: Made with Nuxt UI Pro
-    to: https://ui.nuxt.com/pro
-    icon: i-heroicons-arrow-top-right-on-square-20-solid
   links:
     - label: Get started
       icon: i-heroicons-arrow-right-20-solid
