@@ -55,23 +55,10 @@ function onSubmit() {
 
 <template>
   <UFooter>
-    <template #left>
+    <template #center>
       <p class="text-gray-500 dark:text-gray-400 text-sm">
         © {{ new Date().getFullYear() }} Mael Lacour
       </p>
-    </template>
-
-    <template #right>
-      <UColorModeButton size="sm" />
-
-      <UButton
-        to="https://github.com/nuxt-ui-pro/landing"
-        target="_blank"
-        icon="i-simple-icons-github"
-        aria-label="GitHub"
-        color="gray"
-        variant="ghost"
-      />
     </template>
   </UFooter>
 </template>
