@@ -1,0 +1,10 @@
+socials:
+  - icon: i-simple-icons-linkedin
+    to: #
+    size: xl
+    color: gray
+  - icon: i-simple-icons-github
+    to: #
+    trailing: true
+    size: xl
+    color: gray

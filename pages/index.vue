@@ -51,7 +51,7 @@ useSeoMeta({
       :title="page.contact.title"
       :description="page.contact.description"
       :align="page.contact.align"
-      :links="page.contact.links"
+      :links="page.socials"
       class="scroll-mt-[var(--header-height)]"
     >
       <ImagePlaceholder />

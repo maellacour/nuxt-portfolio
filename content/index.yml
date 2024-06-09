@@ -40,13 +40,3 @@ contact:
   title: Contact
   description: Want to contact me ? The best way to do that would be through social media.
   align: left
-  links:
-    - icon: i-simple-icons-linkedin
-      to: #
-      size: xl
-      color: gray
-    - icon: i-simple-icons-github
-      to: #
-      trailing: true
-      size: xl
-      color: gray
