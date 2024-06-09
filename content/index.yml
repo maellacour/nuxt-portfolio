@@ -4,16 +4,11 @@ hero:
   title: Hi, I am Mael Lacour
   description: A passionate developer who loves to create beautiful and functional websites and applications. Always looking for new challenges and opportunities to learn and grow.
   links:
-    - label: Get started
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
-      to: '#features'
-      size: xl
-    - label: Use this template
-      icon: i-simple-icons-github
+    - label: Download CV
+      icon: i-heroicons-arrow-down-circle
       size: xl
       color: gray
-      to: https://github.com/nuxt-ui-pro/landing
+      to: #
       target: _blank
 logos:
   title: Trusted by the world's best
