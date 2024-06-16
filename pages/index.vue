@@ -16,7 +16,6 @@ useSeoMeta({
       :description="page.hero.description"
       :links="page.hero.links"
     >
-
       <ImagePlaceholder />
     </ULandingHero>
 
@@ -32,7 +31,14 @@ useSeoMeta({
           v-for="(item, index) in page.projects.items"
           :key="index"
           v-bind="item"
-        />
+          orientation="vertical"
+        >
+          <img
+            v-if="item.image"
+            :src="item.image"
+            class="w-full rounded-md"
+          >
+        </ULandingCard>
       </UPageGrid>
     </ULandingSection>
 
