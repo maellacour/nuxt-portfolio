@@ -1,6 +1,6 @@
 ---
-title: 'Lorem Ipsum'
-description: 'A full cooperative multiplayer game developped for the Bavelier Lab at Universtiy of Geneva.'
+title: 'EcoRescue'
+description: 'An action-like video-game to observe effect on anxiety in adolescents.'
 image: tiktik/tiktik.hero.png
 ---
 

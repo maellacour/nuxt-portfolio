@@ -13,20 +13,6 @@ hero:
 projects:
   title: Projects
   description: Some beautiful and very interesting projects that I have worked on.
-  items:
-    - title: TikTik
-      description: A full cooperative multiplayer game developped for the Bavelier Lab at Universtiy of Geneva.
-      image: tiktik/tiktik.hero.png
-    - title: EcoRescue
-      description: An action-like video-game to observe effect on anxiety in adolescents.
-    - title: Neuro
-      description: A VR application to visualize and manipulate easily MRI data and other medical/research 3D data.
-    - title: Lorem
-      description: Qui reprehenderit nostrud dolore nisi ad fugiat labore eiusmod sint aliquip nisi voluptate.
-    - title: Lorem
-      description: Reprehenderit fugiat elit in do ipsum ut pariatur.
-    - title: Lorem
-      description: Lorem deserunt et eiusmod. Ea in consectetur minim officia ullamco enim deserunt est.
 aboutme:
   title: About me
   description: Pariatur laborum dolor ea commodo sit aute aliquip qui et cillum excepteur

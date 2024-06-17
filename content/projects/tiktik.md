@@ -1,7 +1,8 @@
 ---
-title: 'Lorem Ipsum'
-description: 'A full cooperative multiplayer game developped for the Bavelier Lab at Universtiy of Geneva.'
+title: 'TikTik'
+description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
 image: tiktik/tiktik.hero.png
+date: 
 ---
 
 <!-- Project heading and meta info (date, type) -->

@@ -7,6 +7,8 @@ useSeoMeta({
   description: page.value.description,
   ogDescription: page.value.description
 })
+
+const { data: projects } = await useAsyncData('projects', () => queryContent('/projects').where({ _partial: false }).find())
 </script>
 
 <template>
@@ -28,7 +30,7 @@ useSeoMeta({
         class="scroll-mt-[calc(var(--header-height)+140px+128px+96px)]"
       >
         <ULandingCard
-          v-for="(item, index) in page.projects.items"
+          v-for="(item, index) in projects"
           :key="index"
           v-bind="item"
           orientation="vertical"
