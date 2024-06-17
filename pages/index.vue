@@ -33,6 +33,7 @@ const { data: projects } = await useAsyncData('projects', () => queryContent('/p
           v-for="(item, index) in projects"
           :key="index"
           v-bind="item"
+          :to="`/projects/${item.title.toLowerCase().replace(/ /g, '-')}`"
           orientation="vertical"
         >
           <img
