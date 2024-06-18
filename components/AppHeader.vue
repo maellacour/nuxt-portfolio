@@ -4,17 +4,17 @@ const { activeHeadings, updateHeadings } = useScrollspy()
 
 const links = computed(() => [{
   label: 'Projects',
-  to: '#projects',
+  to: '/#projects',
   icon: 'i-heroicons-cube-transparent',
   active: activeHeadings.value.includes('projects') && !activeHeadings.value.includes('aboutme')
 }, {
   label: 'About Me',
-  to: '#aboutme',
+  to: '/#aboutme',
   icon: 'i-heroicons-credit-card',
   active: activeHeadings.value.includes('aboutme') && !activeHeadings.value.includes('contact')
 }, {
   label: 'Contact',
-  to: '#contact',
+  to: '/#contact',
   icon: 'i-heroicons-academic-cap',
   active: activeHeadings.value.includes('contact')
 }])
@@ -39,15 +39,15 @@ nuxtApp.hooks.hookOnce('page:finish', () => {
       <!-- Add me list of buttons -->
       <UButton
         icon="i-simple-icons-linkedin"
-        to=#
+        to="https://www.linkedin.com/in/mael-lacour/"
         color="gray"
-        trailing: true
+        trailing
       />
       <UButton
         icon="i-simple-icons-github"
-        to=#
+        to="https://github.com/Eyap53"
         color="gray"
-        trailing: true
+        trailing
       />
     </template>
   </UHeader>
