@@ -9,10 +9,12 @@
                 mb-2
               "
     >
-    <slot />
+      <slot name="title" />
     </p>
-    <ul class="leading-loose">
-      <slot name="item" />
-    </ul>
+    <p
+      class="font-general-regular text-primary-dark dark:text-ternary-light"
+    >
+      <slot name="details" />
+    </p>
   </div>
 </template>
