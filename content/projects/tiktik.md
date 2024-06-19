@@ -11,12 +11,36 @@ date:
 
 <!-- Project gallery -->
 
-::ULandingCard
-test
+::projects-partner
+# Research partner
+
+#item
+::projects-partner-item
+---
+title: Researcher
+details: Cvetomir Dimov
+---
 ::
+::projects-partner-item
+---
+title: Affiliation
+details: University of Geneva
+---
+::
+::
+
 <!-- Project info -->
 
 <!-- . About partner -->
+::icon-card
+---
+icon: IconNuxt
+description: Harness the full power of Nuxt and the Nuxt ecosystem.
+title: Nuxt Architecture.
+---
+::
+
+
 <!-- . Objective -->
 <!-- . Tools & Technologies  -->
 <!-- . Share this  -->
