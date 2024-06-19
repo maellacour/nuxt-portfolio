@@ -1,6 +1,10 @@
 <template>
-  <main>
+  <main class="container mx-auto">
     <ContentDoc class="prose prose-gray dark:prose-invert max-w-none">
+      <!-- Slot if document not loaded yet -->
+      <template #empty>
+        <h1>Document is loading</h1>
+      </template>
       <!-- Slot if document is not found -->
       <template #not-found>
         <h1 class="text-2xl">

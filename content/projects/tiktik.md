@@ -11,39 +11,35 @@ date:
 
 <!-- Project gallery -->
 
-::projects-partner
-# Research partner
+<!-- Single project left section details -->
+::projects-left-section
+<!-- . Partner -->
+    :::projects-partner
+    # Research partner
 
-#item
-::projects-partner-item
----
-title: Researcher
-details: Cvetomir Dimov
----
-::
-::projects-partner-item
----
-title: Affiliation
-details: University of Geneva
----
-::
-::
+    #item
+        ::::projects-partner-item
+        ---
+        title: Researcher
+        details: Cvetomir Dimov
+        ---
+        ::::
 
-<!-- Project info -->
-
-<!-- . About partner -->
-::icon-card
----
-icon: IconNuxt
-description: Harness the full power of Nuxt and the Nuxt ecosystem.
-title: Nuxt Architecture.
----
-::
+    #item
+        ::::projects-partner-item
+        ---
+        title: Affiliation
+        details: University of Geneva
+        ---
+        ::::
+    :::
 
 
 <!-- . Objective -->
 <!-- . Tools & Technologies  -->
 <!-- . Share this  -->
+
+::
 <!-- . Challenge -->
 Quisque quis rutrum orci. Donec laoreet quis tellus vel faucibus. Mauris sed dui augue. Ut sit amet eros at justo semper malesuada. Vestibulum sem dolor, consequat ut semper at, tincidunt convallis erat. Ut vel ultrices diam. Maecenas quis elementum dolor, sit amet volutpat ligula. Curabitur a enim aliquam, sollicitudin arcu quis, fringilla mi. Curabitur tempor quam ut sem luctus porta. Nunc dignissim mollis euismod. Nam facilisis placerat ex, in eleifend diam euismod ut. Duis mollis faucibus tristique. Maecenas consectetur ut dui vitae laoreet. Cras id dolor egestas, tincidunt sapien et, scelerisque sem. In quam elit, blandit sit amet lorem sit amet, mattis pulvinar enim. Morbi ac tellus sodales, ullamcorper turpis id, blandit sem. 
 
