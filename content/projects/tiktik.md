@@ -36,48 +36,50 @@ tag: Unity 2D
     :::
 ::
 
+::projects-sections
 <!-- Single project left section details -->
-::projects-left-section
+    :::projects-left-section
 <!-- . Partner -->
-    :::projects-left-block
-    #title
-    Research partner
+        ::::projects-left-block
+        #title
+        Research partner
 
-    #details
-    Researcher: Cvetomir Dimov  
-    Affiliation: University of Geneva
-    :::
+        #details
+        Researcher: Cvetomir Dimov  
+        Affiliation: University of Geneva
+        ::::
 
 
 <!-- . Objective -->
-    :::projects-left-block
-    #title
-    Objectives
+        ::::projects-left-block
+        #title
+        Objectives
 
-    #details
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam. 
-    :::
+        #details
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam. 
+        ::::
 
 <!-- . Tools & Technologies  -->
-    :::projects-left-block
-    #title
-    Tools & Technologies
+        ::::projects-left-block
+        #title
+        Tools & Technologies
 
-    #details
-    Unity, C#, Server, Azure  
+        #details
+        Unity, C#, Server, Azure  
+        ::::
     :::
-::
 
 
 <!-- . Challenge -->
-::projects-right-section
-#title
-Challenge
+    :::projects-right-section
+    #title
+    Challenge
 
-#details
-Quisque quis rutrum orci. Donec laoreet quis tellus vel faucibus. Mauris sed dui augue. Ut sit amet eros at justo semper malesuada. Vestibulum sem dolor, consequat ut semper at, tincidunt convallis erat. Ut vel ultrices diam. Maecenas quis elementum dolor, sit amet volutpat ligula. Curabitur a enim aliquam, sollicitudin arcu quis, fringilla mi. Curabitur tempor quam ut sem luctus porta. Nunc dignissim mollis euismod. Nam facilisis placerat ex, in eleifend diam euismod ut.
+    #details
+    Quisque quis rutrum orci. Donec laoreet quis tellus vel faucibus. Mauris sed dui augue. Ut sit amet eros at justo semper malesuada. Vestibulum sem dolor, consequat ut semper at, tincidunt convallis erat. Ut vel ultrices diam. Maecenas quis elementum dolor, sit amet volutpat ligula. Curabitur a enim aliquam, sollicitudin arcu quis, fringilla mi. Curabitur tempor quam ut sem luctus porta. Nunc dignissim mollis euismod. Nam facilisis placerat ex, in eleifend diam euismod ut.
 
-#details
-Duis mollis faucibus tristique. Maecenas consectetur ut dui vitae laoreet. Cras id dolor egestas, tincidunt sapien et, scelerisque sem. In quam elit, blandit sit amet lorem sit amet, mattis pulvinar enim. Morbi ac tellus sodales, ullamcorper turpis id, blandit sem. 
+    Duis mollis faucibus tristique. Maecenas consectetur ut dui vitae laoreet. Cras id dolor egestas, tincidunt sapien et, scelerisque sem. In quam elit, blandit sit amet lorem sit amet, mattis pulvinar enim. Morbi ac tellus sodales, ullamcorper turpis id, blandit sem. 
+    :::
 ::
+
 <!-- Related projects -->
