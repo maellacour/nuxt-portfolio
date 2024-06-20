@@ -9,12 +9,32 @@ date:
 ::projects-header
 ---
 title: TikTik
-publishDate: 2023
-tag: test
+publishDate: "2023"
+tag: Unity 2D
 ---
 ::
 
 <!-- Project gallery -->
+::projects-gallery
+    :::projects-gallery-image
+    ---
+    image: /tiktik/cooperate.png
+    index: 0
+    ---
+    :::
+    :::projects-gallery-image
+    ---
+    image: /tiktik/controller-support.png
+    index: 1
+    ---
+    :::
+    :::projects-gallery-image
+    ---
+    image: /tiktik/design.png
+    index: 2
+    ---
+    :::
+::
 
 <!-- Single project left section details -->
 ::projects-left-section
@@ -51,7 +71,6 @@ tag: test
 
 <!-- . Challenge -->
 ::projects-right-section
-aaa
 #title
 Challenge
 
