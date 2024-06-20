@@ -5,7 +5,8 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxt/eslint',
     '@nuxt/ui',
-    '@nuxt/fonts'
+    '@nuxt/fonts',
+    '@nuxtjs/cloudinary'
   ],
   ui: {
     icons: ['heroicons', 'simple-icons']
