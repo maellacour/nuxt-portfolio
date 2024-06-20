@@ -18,20 +18,23 @@ tag: Unity 2D
 ::projects-gallery
     :::projects-gallery-image
     ---
-    image: /tiktik/cooperate.png
+    name: tiktik.cooperate
     index: 0
+    alt: Coop Multiplayer
     ---
     :::
     :::projects-gallery-image
     ---
-    image: /tiktik/controller-support.png
+    name: tiktik.controller-support
     index: 1
+    alt: Controller support
     ---
     :::
     :::projects-gallery-image
     ---
-    image: /tiktik/design.png
+    name: tiktik.design
     index: 2
+    alt: Design your own levels
     ---
     :::
 ::
@@ -82,4 +85,11 @@ tag: Unity 2D
     :::
 ::
 
+## Watch the video !
+
+::cloudinary-video
+---
+videoId: tiktik.com.video-com_zl3hir.mp4
+---
+::
 <!-- Related projects -->
