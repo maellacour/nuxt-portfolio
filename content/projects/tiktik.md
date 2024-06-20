@@ -6,8 +6,13 @@ date:
 ---
 
 <!-- Project heading and meta info (date, type) -->
-# {{ $doc.title }}
-
+::projects-header
+---
+title: TikTik
+publishDate: 2023
+tag: test
+---
+::
 
 <!-- Project gallery -->
 
