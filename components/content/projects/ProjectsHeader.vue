@@ -1,25 +1,13 @@
 <template>
   <div>
-    <p
-      class="
-              font-general-medium
-              text-left text-3xl
-              sm:text-4xl
-              font-bold
-              text-primary-dark
-              dark:text-primary-light
-              mt-14
-              sm:mt-20
-              mb-7
-            "
-    >
-      {{ title }}
-    </p>
+    <h2 class="text-5xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-7xl">
+      Project: {{ title }}
+    </h2>
     <div class="flex">
       <div class="flex items-center mr-10">
-        <i
-          data-feather="clock"
-          class="w-4 h-4 text-ternary-dark dark:text-ternary-light"
+        <span
+          class="i-heroicons-clock flex-shrink-0 h-6 w-6"
+          aria-hidden="true"
         />
         <span
           class="
@@ -32,9 +20,9 @@
         >{{ publishDate }}</span>
       </div>
       <div class="flex items-center">
-        <i
-          data-feather="tag"
-          class="w-4 h-4 text-ternary-dark dark:text-ternary-light"
+        <span
+          class="i-heroicons-tag flex-shrink-0 h-6 w-6"
+          aria-hidden="true"
         />
         <span
           class="
