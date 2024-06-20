@@ -15,9 +15,27 @@ projects:
   description: Some beautiful and very interesting projects that I have worked on.
 aboutme:
   title: About me
-  description: Pariatur laborum dolor ea commodo sit aute aliquip qui et cillum excepteur
+  description: >
+    <p>During my general engineering training, I discovered my passion for project development, especially in the realm of computer science.
+    This realization naturally led me to focus on 2D and 3D technologies, fields that offer a vast array of exciting possibilities.
+    My love for learning has driven me to continuously expand my skill set, diving deep into various tools and languages.<br />
+    After my start with with web development, I ventured into the fascinating world of 3D graphics, mastering Unity and Blender.
+    My curiosity didn't stop there – I then delved into C#, the HLSL shader language and its Shader Nodes counterpart among other tools and technologies.
+    The list of things I've explored is extensive, but I always thrive on the challenge of mastering each new one !</p>
+    <br />
+    <p>In my professional roles, I have always prioritized quality and resilience.
+    I believe that applications should not only be functional but also robust and adaptable.
+    My aim is to deliver solutions that empower my partners, giving them the tools they need to achieve true autonomy and success in their endeavors.</p>
   align: right
+  image:
+    name: profil-with-headset_kltqvr
+    alt: Mael Lacour
+    grayscale: true
 contact:
   title: Contact
-  description: Want to contact me ? The best way to do that would be through social media.
+  description: >
+    <p>Do you have a new challenge to share ?</p>
+    <p>Some interesting and innovative ideas ?</p>
+    <br />
+    <p>Don't hesitate :) ! The best way to do that would be through social media, the links are in the headers.</p>
   align: left

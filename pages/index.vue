@@ -52,18 +52,35 @@ const { data: projects } = await useAsyncData('projects', () => queryContent('/p
       :align="page.aboutme.align"
       class="scroll-mt-[var(--header-height)]"
     >
-      <ImagePlaceholder />
+      <CldImage
+        :src="page.aboutme.image.name"
+        class="rounded-xl cursor-pointer shadow-lg sm:shadow-none"
+        :alt="page.aboutme.image.src"
+        :grayscale="page.aboutme.image.grayscale"
+      />
+      <template #description>
+        <div
+          v-if="page.aboutme.description"
+          class="text-justify"
+          v-html="page.aboutme.description"
+        />
+      </template>
     </ULandingSection>
 
     <ULandingSection
       id="contact"
       :title="page.contact.title"
-      :description="page.contact.description"
       :align="page.contact.align"
       :links="page.socials"
       class="scroll-mt-[var(--header-height)]"
     >
       <ImagePlaceholder />
+      <template #description>
+        <div
+          v-if="page.contact.description"
+          v-html="page.contact.description"
+        />
+      </template>
     </ULandingSection>
   </div>
 </template>
