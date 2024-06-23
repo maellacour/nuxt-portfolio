@@ -36,13 +36,17 @@ aboutme:
 contact:
   title: Contact me
   description: >
-    <p>Do you have a new challenge to share ?</p>
-    <p>Some interesting and innovative ideas ?</p>
+    <p>Do you have a new challenge to share ?<br />
+    <p>Some interesting and innovative ideas ?<br />
+    Don't hesitate :)
+    </p>
     <br />
-    <p>Don't hesitate :) !<br />
-    You can send me an email to contact.dev at maellacour.com<br />
+    <p>
+    You can send me an email to :<br/>
+    <span class="i-heroicons-envelope"></span>  contact.dev at maellacour.com
+    </p>
     <br />
-    Let's make it FLY.</p>
+    <p>Let's make it FLY !</p>
   align: left
   image:
     name: parapente-lac-leman-grayscale_zs8vg8.jpg
