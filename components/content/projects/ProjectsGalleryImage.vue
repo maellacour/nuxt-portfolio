@@ -7,6 +7,8 @@
       :src="name"
       class="rounded-xl cursor-pointer shadow-lg sm:shadow-none"
       :alt="alt"
+      width="1080"
+      height="608"
     />
   </div>
 </template>

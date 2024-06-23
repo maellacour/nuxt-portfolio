@@ -17,8 +17,16 @@ const { data: projects } = await useAsyncData('projects', () => queryContent('/p
       :title="page.hero.title"
       :description="page.hero.description"
       :links="page.hero.links"
+      orientation="horizontal"
     >
-      <ImagePlaceholder />
+      <CldImage
+        :src="page.hero.image.name"
+        :alt="page.hero.image.alt"
+        :grayscale="page.hero.image.grayscale"
+        width="1080"
+        height="1080"
+        class="rounded-xl cursor-pointer shadow-lg sm:shadow-none"
+      />
     </ULandingHero>
 
     <ULandingSection
@@ -54,9 +62,11 @@ const { data: projects } = await useAsyncData('projects', () => queryContent('/p
     >
       <CldImage
         :src="page.aboutme.image.name"
-        class="rounded-xl cursor-pointer shadow-lg sm:shadow-none"
-        :alt="page.aboutme.image.src"
+        :alt="page.aboutme.image.alt"
         :grayscale="page.aboutme.image.grayscale"
+        class="rounded-xl cursor-pointer shadow-lg sm:shadow-none"
+        width="1024"
+        height="1024"
       />
       <template #description>
         <div
@@ -74,7 +84,14 @@ const { data: projects } = await useAsyncData('projects', () => queryContent('/p
       :links="page.socials"
       class="scroll-mt-[var(--header-height)]"
     >
-      <ImagePlaceholder />
+      <CldImage
+        :src="page.contact.image.name"
+        :alt="page.contact.image.alt"
+        :grayscale="page.contact.image.grayscale"
+        class="rounded-xl cursor-pointer shadow-lg sm:shadow-none"
+        width="1000"
+        height="668"
+      />
       <template #description>
         <div
           v-if="page.contact.description"

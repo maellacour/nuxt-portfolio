@@ -10,6 +10,10 @@ hero:
       color: gray
       to: #
       target: _blank
+  image:
+    name: mael.profil.vr.grayscale_x8wucy.jpg
+    alt: Mael Lacour
+    grayscale: true
 projects:
   title: Projects
   description: Some beautiful and very interesting projects that I have worked on.
@@ -28,14 +32,21 @@ aboutme:
     My aim is to deliver solutions that empower my partners, giving them the tools they need to achieve true autonomy and success in their endeavors.</p>
   align: right
   image:
-    name: profil-with-headset_kltqvr
+    name: mael.office.square.grayscale_enkzmk.jpg
     alt: Mael Lacour
     grayscale: true
 contact:
-  title: Contact
+  title: Contact me
   description: >
     <p>Do you have a new challenge to share ?</p>
     <p>Some interesting and innovative ideas ?</p>
     <br />
-    <p>Don't hesitate :) ! The best way to do that would be through social media, the links are in the headers.</p>
+    <p>Don't hesitate :) !<br />
+    You can send me an email to contact.dev at maellacour.com<br />
+    <br />
+    Let's make it FLY.</p>
   align: left
+  image:
+    name: parapente-lac-leman-grayscale_zs8vg8.jpg
+    alt: Paragliding over Geneva Lake
+    grayscale: true
