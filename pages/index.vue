@@ -22,9 +22,8 @@ const { data: projects } = await useAsyncData('projects', () => queryContent('/p
       <CldImage
         :src="page.hero.image.name"
         :alt="page.hero.image.alt"
-        :grayscale="page.hero.image.grayscale"
         width="1080"
-        height="1080"
+        height="calc"
         class="rounded-xl cursor-pointer shadow-lg sm:shadow-none"
       />
     </ULandingHero>
@@ -44,11 +43,13 @@ const { data: projects } = await useAsyncData('projects', () => queryContent('/p
           :to="`/projects/${item.title.toLowerCase().replace(/ /g, '-')}`"
           orientation="vertical"
         >
-          <img
-            v-if="item.image"
+          <CldImage
             :src="item.image"
-            class="w-full rounded-md"
-          >
+            :alt="item.title"
+            class="rounded-xl cursor-pointer shadow-lg sm:shadow-none"
+            width="1024"
+            height="600"
+          />
         </ULandingCard>
       </UPageGrid>
     </ULandingSection>
@@ -63,7 +64,6 @@ const { data: projects } = await useAsyncData('projects', () => queryContent('/p
       <CldImage
         :src="page.aboutme.image.name"
         :alt="page.aboutme.image.alt"
-        :grayscale="page.aboutme.image.grayscale"
         class="rounded-xl cursor-pointer shadow-lg sm:shadow-none"
         width="1024"
         height="1024"
@@ -87,7 +87,6 @@ const { data: projects } = await useAsyncData('projects', () => queryContent('/p
       <CldImage
         :src="page.contact.image.name"
         :alt="page.contact.image.alt"
-        :grayscale="page.contact.image.grayscale"
         class="rounded-xl cursor-pointer shadow-lg sm:shadow-none"
         width="1000"
         height="668"

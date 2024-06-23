@@ -1,8 +1,8 @@
 ---
 title: 'TikTik'
-description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-image: tiktik/tiktik.hero.png
-date: 
+description: 'A 2D multiplayer game where players needs to cooperate to solve puzzles.'
+image: tiktik.hero.png
+date: "2023"
 ---
 
 <!-- Project heading and meta info (date, type) -->
@@ -59,7 +59,7 @@ tag: Unity 2D
         Objectives
 
         #details
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam. 
+        {{ $doc.description }} 
         ::::
 
 <!-- . Tools & Technologies  -->

@@ -13,7 +13,6 @@ hero:
   image:
     name: mael.profil.vr.grayscale_x8wucy.jpg
     alt: Mael Lacour
-    grayscale: true
 projects:
   title: Projects
   description: Some beautiful and very interesting projects that I have worked on.
@@ -34,7 +33,6 @@ aboutme:
   image:
     name: mael.office.square.grayscale_enkzmk.jpg
     alt: Mael Lacour
-    grayscale: true
 contact:
   title: Contact me
   description: >
@@ -49,4 +47,3 @@ contact:
   image:
     name: parapente-lac-leman-grayscale_zs8vg8.jpg
     alt: Paragliding over Geneva Lake
-    grayscale: true
