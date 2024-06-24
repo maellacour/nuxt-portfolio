@@ -8,7 +8,7 @@ hero:
       icon: i-heroicons-arrow-down-circle
       size: xl
       color: gray
-      to: #
+      to: "LACOUR.Mael.Resume.No-Tel.pdf"
       target: _blank
   image:
     name: mael.profil.vr.grayscale_x8wucy.jpg
