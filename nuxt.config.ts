@@ -9,7 +9,8 @@ export default defineNuxtConfig({
     '@nuxt/fonts',
     '@nuxtjs/cloudinary',
     '@nuxtjs/seo',
-    'nuxt-cloudflare-analytics'
+    'nuxt-cloudflare-analytics',
+    "@nuxt/image"
   ],
 
   site: {
