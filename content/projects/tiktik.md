@@ -79,9 +79,10 @@ tag: Unity 2D
     Challenge
 
     #details
-    Quisque quis rutrum orci. Donec laoreet quis tellus vel faucibus. Mauris sed dui augue. Ut sit amet eros at justo semper malesuada. Vestibulum sem dolor, consequat ut semper at, tincidunt convallis erat. Ut vel ultrices diam. Maecenas quis elementum dolor, sit amet volutpat ligula. Curabitur a enim aliquam, sollicitudin arcu quis, fringilla mi. Curabitur tempor quam ut sem luctus porta. Nunc dignissim mollis euismod. Nam facilisis placerat ex, in eleifend diam euismod ut.
-
-    Duis mollis faucibus tristique. Maecenas consectetur ut dui vitae laoreet. Cras id dolor egestas, tincidunt sapien et, scelerisque sem. In quam elit, blandit sit amet lorem sit amet, mattis pulvinar enim. Morbi ac tellus sodales, ullamcorper turpis id, blandit sem. 
+    I worked as the project manager for this Unity project. It was a rewarding yet challenging experience, and we experimented with a few collaborative methods that were successfull, including the use of notion and some git and dev practices. With a team of three, our efforts were distributed effectively: one colleague focused on design and UI effects, bringing visual elements to life with stunning effects; another dedicated their time to crafting a particle system for the beams and an intricate replay system that added a visual feedback for the researcher. 
+    
+    My responsibilities included implementing player interaction mechanics, laying the groundwork for seamless level play, and developing tools for efficient level creation. 
+    Additionally, I tackled the complexities of local multiplayer functionality (and currently working on online multiplayer), ensuring smooth controller support. Managing the data and player account system, along with a log-in and level progression, added another layer of complexity, requiring meticulous attention to detail to maintain security and user experience.
     :::
 ::
 
