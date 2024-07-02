@@ -25,6 +25,8 @@ const { data: projects } = await useAsyncData('projects', () => queryContent('/p
         width="1080"
         height="calc"
         class="rounded-xl cursor-pointer shadow-lg sm:shadow-none"
+        sizes="(max-width: 1024px) 100vw, 50vw"
+        format="webp"
       />
     </ULandingHero>
 
@@ -49,6 +51,8 @@ const { data: projects } = await useAsyncData('projects', () => queryContent('/p
             class="rounded-xl cursor-pointer shadow-lg sm:shadow-none"
             width="1024"
             height="600"
+            sizes="(max-width: 640px) 100vw, (max-width: 1080px) 50vw, 33vw"
+            format="webp"
           />
         </ULandingCard>
       </UPageGrid>
@@ -67,6 +71,8 @@ const { data: projects } = await useAsyncData('projects', () => queryContent('/p
         class="rounded-xl cursor-pointer shadow-lg sm:shadow-none"
         width="1024"
         height="1024"
+        sizes="(max-width: 1024px) 100vw, 50vw"
+        format="webp"
       />
       <template #description>
         <div
@@ -90,6 +96,8 @@ const { data: projects } = await useAsyncData('projects', () => queryContent('/p
         class="rounded-xl cursor-pointer shadow-lg sm:shadow-none"
         width="1000"
         height="668"
+        sizes="(max-width: 1024px) 100vw, 50vw"
+        format="webp"
       />
       <template #description>
         <div
