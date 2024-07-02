@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   extends: ['@nuxt/ui-pro'],
+
   modules: [
     '@nuxt/content',
     '@nuxt/eslint',
@@ -10,21 +11,26 @@ export default defineNuxtConfig({
     '@nuxtjs/seo',
     'nuxt-cloudflare-analytics'
   ],
+
   site: {
     url: 'https://portfolio.maellacour.com',
     name: 'Mael Lacour | Portfolio',
     description: 'A portfolio where I showcase my work on web and Unity development.',
     defaultLocale: 'en' // not needed if you have @nuxtjs/i18n installed
   },
+
   ui: {
     icons: ['heroicons', 'simple-icons']
   },
+
   devtools: {
     enabled: true
   },
+
   typescript: {
     strict: false
   },
+
   eslint: {
     config: {
       stylistic: {
@@ -33,7 +39,10 @@ export default defineNuxtConfig({
       }
     }
   },
+
   cloudflareAnalytics: {
     token: process.env.CLOUDFLARE_ANALYTICS_TOKEN
-  }
+  },
+
+  compatibilityDate: '2024-07-02'
 })
