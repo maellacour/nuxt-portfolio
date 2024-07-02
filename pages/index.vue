@@ -8,6 +8,8 @@ useSeoMeta({
   ogDescription: page.value.description
 })
 
+defineOgImageComponent('NuxtSeo') // To be replaced later
+
 const { data: projects } = await useAsyncData('projects', () => queryContent('/projects').where({ _partial: false }).find())
 </script>
 

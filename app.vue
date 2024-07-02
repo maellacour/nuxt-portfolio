@@ -10,12 +10,6 @@ useHead({
     lang: 'en'
   }
 })
-
-useSeoMeta({
-  ogImage: 'https://landing-template.nuxt.dev/social-card.png',
-  twitterImage: 'https://landing-template.nuxt.dev/social-card.png',
-  twitterCard: 'summary_large_image'
-})
 </script>
 
 <template>

@@ -19,4 +19,6 @@
 useHead({
   titleTemplate: 'Mael Lacour | %s'
 })
+
+defineOgImageComponent('NuxtSeo')
 </script>
