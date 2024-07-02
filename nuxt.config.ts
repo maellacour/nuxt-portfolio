@@ -7,7 +7,8 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@nuxt/fonts',
     '@nuxtjs/cloudinary',
-    '@nuxtjs/seo'
+    '@nuxtjs/seo',
+    'nuxt-cloudflare-analytics'
   ],
   site: {
     url: 'https://portfolio.maellacour.com',
@@ -31,5 +32,8 @@ export default defineNuxtConfig({
         braceStyle: '1tbs'
       }
     }
+  },
+  cloudflareAnalytics: {
+    token: process.env.CLOUDFLARE_ANALYTICS_TOKEN
   }
 })
