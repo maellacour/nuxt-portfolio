@@ -1,18 +1,3 @@
-<script setup lang="ts">
-const { data: page } = await useAsyncData('index', () => queryContent('/').findOne())
-
-useSeoMeta({
-  title: page.value.title,
-  ogTitle: page.value.title,
-  description: page.value.description,
-  ogDescription: page.value.description
-})
-
-defineOgImageComponent('NuxtSeo') // To be replaced later
-
-const { data: projects } = await useAsyncData('projects', () => queryContent('/projects').where({ _partial: false }).find())
-</script>
-
 <template>
   <div>
     <ULandingHero
@@ -110,3 +95,16 @@ const { data: projects } = await useAsyncData('projects', () => queryContent('/p
     </ULandingSection>
   </div>
 </template>
+
+<script setup lang="ts">
+const { data: page } = await useAsyncData('index', () => queryContent('/').findOne())
+
+useSeoMeta({
+  title: page.value.title,
+  description: page.value.description,
+})
+
+defineOgImageComponent('NuxtSeo') // To be replaced later
+
+const { data: projects } = await useAsyncData('projects', () => queryContent('/projects').where({ _partial: false }).find())
+</script>
