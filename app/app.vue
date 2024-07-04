@@ -1,3 +1,15 @@
+<template>
+  <AppHeader />
+
+  <UMain>
+    <NuxtPage />
+  </UMain>
+
+  <AppFooter />
+
+  <UNotifications />
+</template>
+
 <script setup lang="ts">
 useHead({
   meta: [
@@ -11,15 +23,3 @@ useHead({
   }
 })
 </script>
-
-<template>
-  <AppHeader />
-
-  <UMain>
-    <NuxtPage />
-  </UMain>
-
-  <AppFooter />
-
-  <UNotifications />
-</template>
