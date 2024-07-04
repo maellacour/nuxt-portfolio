@@ -1,13 +1,16 @@
 <template>
-  <AppHeader />
-
-  <UMain>
-    <NuxtPage />
-  </UMain>
-
-  <AppFooter />
-
-  <UNotifications />
+  <div>
+    <NuxtLoadingIndicator />
+    <AppHeader />
+    
+    <UMain>
+      <NuxtPage />
+    </UMain>
+    
+    <AppFooter />
+    
+    <UNotifications />
+  </div>
 </template>
 
 <script setup lang="ts">
