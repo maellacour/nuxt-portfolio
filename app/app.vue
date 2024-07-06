@@ -8,8 +8,6 @@
     </UMain>
     
     <AppFooter />
-    
-    <UNotifications />
   </div>
 </template>
 
