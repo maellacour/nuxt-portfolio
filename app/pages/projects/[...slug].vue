@@ -16,6 +16,8 @@
 </template>
 
 <script setup lang="ts">
+const route = useRoute()
+const { data: page } = await useAsyncData(`/${route.path}`, () => queryContent(route.path).findOne())
 
 useHead({
   titleTemplate: 'Mael Lacour | %s'
@@ -23,8 +25,8 @@ useHead({
 
 defineOgImageComponent('Project',
   {
-    title: '%s',
-    image: "/logo.png",
+    title: page.value.title,
+    image: page.value.image
   }
 )
 </script>
