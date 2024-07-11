@@ -31,9 +31,12 @@ export default defineNuxtConfig({
   },
 
   devtools: {
-    enabled: true
-  },
+    enabled: true,
 
+    timeline: {
+      enabled: true,
+  },
+  },
   typescript: {
     strict: false
   },
@@ -49,9 +52,16 @@ export default defineNuxtConfig({
     }
   },
 
+  colorMode: {
+    fallback: 'dark',
+    classSuffix: '',
+  },
+
   site: {
     name: 'Mael Lacour | Portfolio',
     description: 'A portfolio where I showcase my work on web and Unity development.',
+    logo: '/logo.png',
+    url: process.env.NUXT_PUBLIC_SITE_URL || 'http://localhost:3000',
     defaultLocale: 'en' // not needed if you have @nuxtjs/i18n installed
   },
 
