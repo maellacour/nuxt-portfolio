@@ -97,14 +97,25 @@
 </template>
 
 <script setup lang="ts">
+import { useSeoMeta, defineOgImageComponent } from '#imports'
+
 const { data: page } = await useAsyncData('index', () => queryContent('/').findOne())
+const { data: projects } = await useAsyncData('projects', () => queryContent('/projects').where({ _partial: false }).find())
 
 useSeoMeta({
-  title: page.value.title,
-  description: page.value.description,
+  title: page.value.title || 'Mael Lacour',
+  ogImage: '/og.png',
+  description: page.value.description || 'A portfolio where I showcase my work on web and Unity development.',
+  titleTemplate: '%s',
+  twitterImage: '/og.png',
+  twitterCard: 'summary_large_image',
+  twitterTitle: page.value.title || 'Mael Lacour',
+  twitterDescription: page.value.description || 'A portfolio where I showcase my work on web and Unity development.'
 })
 
-defineOgImageComponent('NuxtSeo') // To be replaced later
-
-const { data: projects } = await useAsyncData('projects', () => queryContent('/projects').where({ _partial: false }).find())
+defineOgImageComponent('Project',
+  {
+    title: '%s',
+  }
+)
 </script>

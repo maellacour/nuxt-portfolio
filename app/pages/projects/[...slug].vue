@@ -16,9 +16,15 @@
 </template>
 
 <script setup lang="ts">
+
 useHead({
   titleTemplate: 'Mael Lacour | %s'
 })
 
-defineOgImageComponent('NuxtSeo')
+defineOgImageComponent('Project',
+  {
+    title: '%s',
+    image: "/logo.png",
+  }
+)
 </script>
