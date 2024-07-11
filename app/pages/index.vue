@@ -5,7 +5,8 @@
       :description="page.hero.description"
       :links="page.hero.links"
       orientation="horizontal"
-    >
+      class="text-justify"
+      >
       <CldImage
         :src="page.hero.image.name"
         :alt="page.hero.image.alt"
@@ -31,6 +32,7 @@
           v-bind="item"
           :to="`/projects/${item.title.toLowerCase().replace(/ /g, '-')}`"
           orientation="vertical"
+          class="text-justify"
         >
           <CldImage
             :src="item.image"
@@ -50,7 +52,7 @@
       :title="page.aboutme.title"
       :description="page.aboutme.description"
       :align="page.aboutme.align"
-      class="scroll-mt-[var(--header-height)]"
+      class="scroll-mt-[var(--header-height)] text-justify"
     >
       <CldImage
         :src="page.aboutme.image.name"
@@ -64,7 +66,6 @@
       <template #description>
         <div
           v-if="page.aboutme.description"
-          class="text-justify"
           v-html="page.aboutme.description"
         />
       </template>
@@ -75,7 +76,7 @@
       :title="page.contact.title"
       :align="page.contact.align"
       :links="page.socials"
-      class="scroll-mt-[var(--header-height)]"
+      class="scroll-mt-[var(--header-height)] text-justify"
     >
       <CldImage
         :src="page.contact.image.name"
@@ -116,6 +117,7 @@ useSeoMeta({
 defineOgImageComponent('Project',
   {
     title: '%s',
+    image: page.value.hero.image.name
   }
 )
 </script>
