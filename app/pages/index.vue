@@ -114,9 +114,9 @@ useSeoMeta({
   twitterDescription: page.value.description || 'A portfolio where I showcase my work on web and Unity development.'
 })
 
-defineOgImageComponent('Project',
+defineOgImageComponent('Home',
   {
-    title: '%s',
+    title: page.value.hero.title,
     image: page.value.hero.image.name
   }
 )
