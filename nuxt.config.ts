@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
     '@nuxt/eslint',
-    "@nuxt/image",
+    '@nuxt/image',
     '@nuxt/ui',
     '@nuxt/fonts',
     '@nuxtjs/cloudinary',
@@ -34,8 +34,8 @@ export default defineNuxtConfig({
     enabled: true,
 
     timeline: {
-      enabled: true,
-  },
+      enabled: true
+    }
   },
   typescript: {
     strict: false
@@ -54,7 +54,7 @@ export default defineNuxtConfig({
 
   colorMode: {
     fallback: 'dark',
-    classSuffix: '',
+    classSuffix: ''
   },
 
   site: {
