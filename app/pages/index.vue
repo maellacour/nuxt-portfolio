@@ -117,7 +117,7 @@ useSeoMeta({
 defineOgImageComponent('Home',
   {
     title: page.value.hero.title,
-    image: page.value.hero.image.name
+    image: page.value.ogimage
   }
 )
 </script>

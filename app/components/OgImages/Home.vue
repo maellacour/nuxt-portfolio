@@ -62,7 +62,7 @@ const backgroundAttrs = computed(() => {
       position: 'absolute',
       width: '100%',
       height: '100%',
-      background: '#999999'
+      background: '#3384ad'
     }
   }
 })
@@ -78,7 +78,7 @@ const backgroundFlareAttrs = computed(() => {
       top: '0%',
       width: '200%',
       height: '200%',
-      backgroundImage: 'radial-gradient(circle, #dddddd 0%,  #acacac 45%, #858585 70%)'
+      backgroundImage: 'radial-gradient(circle, #b2d1e0  0%,  #7fb2cb  50%, #3384ad 70%)'
     }
   }
 })
@@ -91,9 +91,10 @@ const backgroundFlareTwoAttrs = computed(() => {
       display: 'flex',
       position: 'absolute',
       right: '-5%',
+      top: '-40%',
       width: '150%',
       height: '150%',
-      backgroundImage: 'radial-gradient(circle, #dddddd 0%,  #acacac 45%, #858585 70%)'
+      backgroundImage: 'radial-gradient(circle, #b2d1e0  0%,  #7fb2cb  50%, #3384ad 70%)'
     }
   }
 })

@@ -62,7 +62,7 @@ const backgroundAttrs = computed(() => {
       position: 'absolute',
       width: '100%',
       height: '100%',
-      background: '#80fdff'
+      background: '#3384ad'
     }
   }
 })

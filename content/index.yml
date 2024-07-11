@@ -1,7 +1,8 @@
 title: Mael Lacour
-description: A portfolio where I showcase my work on web and Unity development.
+description: Here's a portfolio where I showcase my work on web and Unity development.
+ogimage: profil-with-headset_kltqvr.jpg
 hero:
-  title: Hi, I am Mael Lacour
+  title: Hey, It's Mael Lacour
   description: A passionate developer who loves to create beautiful and functional websites and applications. Always looking for new challenges and opportunities to learn and grow.
   links:
     - label: Download CV
