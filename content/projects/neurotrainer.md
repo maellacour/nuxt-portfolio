@@ -9,7 +9,7 @@ date: 2022
 ::projects-header
 ---
 title: NeuroTrainer
-publishDate: 2022
+publishDate: "2022"
 tag: Unity 3D, VR, MRI
 ---
 ::
