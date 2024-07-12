@@ -6,7 +6,7 @@
       :links="page.hero.links"
       orientation="horizontal"
       class="text-justify"
-      >
+    >
       <CldImage
         :src="page.hero.image.name"
         :alt="page.hero.image.alt"
