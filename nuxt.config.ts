@@ -29,6 +29,9 @@ export default defineNuxtConfig({
   routeRules: {
     '/': { prerender: true }
   },
+  nitro: {
+    static: true
+  },
 
   devtools: {
     enabled: true,
