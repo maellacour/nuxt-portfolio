@@ -62,7 +62,7 @@ const backgroundAttrs = computed(() => {
       position: 'absolute',
       width: '100%',
       height: '100%',
-      background: '#3384ad'
+      background: 'rgba(51, 132, 173, 1)'
     }
   }
 })
@@ -75,10 +75,10 @@ const backgroundFlareAttrs = computed(() => {
       display: 'flex',
       position: 'absolute',
       left: '-50%',
-      top: '0%',
+      bottom: '-10%',
       width: '200%',
       height: '200%',
-      backgroundImage: 'radial-gradient(circle, #b2d1e0  0%,  #7fb2cb  50%, #3384ad 70%)'
+      backgroundImage: 'radial-gradient(circle, rgba(178, 209, 224, 0.2) 0%, rgba(127, 178, 203, 0.8) 50%, rgba(51, 132, 173, 0) 70%)'
     }
   }
 })
@@ -90,11 +90,11 @@ const backgroundFlareTwoAttrs = computed(() => {
     style: {
       display: 'flex',
       position: 'absolute',
-      right: '-5%',
+      right: '-30%',
       top: '-40%',
       width: '150%',
       height: '150%',
-      backgroundImage: 'radial-gradient(circle, #b2d1e0  0%,  #7fb2cb  50%, #3384ad 70%)'
+      backgroundImage: 'radial-gradient(circle, rgba(178, 209, 224, 0.8) 0%, rgba(127, 178, 203, 0.6) 50%, rgba(51, 132, 173, 0.3) 70%)'
     }
   }
 })
