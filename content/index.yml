@@ -12,7 +12,7 @@ hero:
       to: "LACOUR.Mael.Resume.No-Tel.pdf"
       target: _blank
   image:
-    name: mael.profil.vr.grayscale_x8wucy.jpg
+    name: profil-with-headset_kltqvr.jpg
     alt: Mael Lacour
 projects:
   title: Projects
@@ -50,5 +50,5 @@ contact:
     <p>Let's make it FLY !</p>
   align: left
   image:
-    name: parapente-lac-leman-grayscale_zs8vg8.jpg
+    name: parapente2_zeuwf9
     alt: Paragliding over Geneva Lake

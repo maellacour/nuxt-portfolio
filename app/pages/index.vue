@@ -83,7 +83,7 @@
         :alt="page.contact.image.alt"
         class="rounded-xl cursor-pointer shadow-lg sm:shadow-none"
         width="1000"
-        height="668"
+        height="calc"
         sizes="(max-width: 1024px) 100vw, 50vw"
         format="webp"
       />
