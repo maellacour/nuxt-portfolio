@@ -1,7 +1,7 @@
 ---
 title: 'EcoRescue'
 description: 'An action-like video-game to observe effect on anxiety in adolescents.'
-image: AllCleanPlanets_aa1zkz.png
+image: EcoRescue.Hero.png
 date: 2022
 ---
 
@@ -42,15 +42,22 @@ tag: Unity 3D, Fast-paced
     :::projects-gallery-image
     ---
     name: Statistics.EcoRescue_ufg8mb.png
-    index: 2
+    index: 3
     alt: EcoRescue Statistics
     ---
     :::
     :::projects-gallery-image
     ---
     name: AllCleanPlanets_aa1zkz.png
-    index: 2
+    index: 4
     alt: EcoRescue all clean planets
+    ---
+    :::
+    :::projects-gallery-image
+    ---
+    name: EcoRescue.Partners_t5x93h.png
+    index: 5
+    alt: EcoRescue partners
     ---
     :::
 ::
@@ -67,10 +74,10 @@ tag: Unity 3D, Fast-paced
         Researcher: Naima Gradi  
         Position: PhD
 
-        Professor: Daphne Bavelier
+        Professor: Daphne Bavelier  
         Affiliation: University of Geneva
 
-        Professor: Swann Pichon
+        Professor: Swann Pichon  
         Affiliation: HES-SO
         ::::
 
@@ -108,7 +115,7 @@ tag: Unity 3D, Fast-paced
 ::cloudinary-video
 ---
 
-videoId: NeuroTrainer-resized_ui8ak9.mp4
+videoId: EcoRescue.Video.mp4
 ---
 
 ::
