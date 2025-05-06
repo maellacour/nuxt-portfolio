@@ -8,10 +8,12 @@ date: 2022
 <!-- Project heading and meta info (date, type) -->
 ::projects-header
 ---
+
 title: NeuroTrainer
-publishDate: "2022"
+publishDate: 2022
 tag: Unity 3D, VR, MRI
 ---
+
 ::
 
 <!-- Project gallery -->
@@ -52,7 +54,6 @@ tag: Unity 3D, VR, MRI
         Affiliation: HUG
         ::::
 
-
 <!-- . Objective -->
         ::::projects-left-block
         #title
@@ -72,7 +73,6 @@ tag: Unity 3D, VR, MRI
         ::::
     :::
 
-
 <!-- . Challenge -->
     :::projects-right-section
     #title
@@ -85,11 +85,13 @@ tag: Unity 3D, VR, MRI
     :::
 ::
 
-## Watch the video !
+## Watch the video
 
 ::cloudinary-video
 ---
+
 videoId: NeuroTrainer-resized_ui8ak9.mp4
 ---
+
 ::
 <!-- Related projects -->

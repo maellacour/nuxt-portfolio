@@ -2,16 +2,18 @@
 title: 'TikTik'
 description: 'A 2D multiplayer game where players needs to cooperate to solve puzzles.'
 image: tiktik.hero.png
-date: "2023"
+date: 2023
 ---
 
 <!-- Project heading and meta info (date, type) -->
 ::projects-header
 ---
+
 title: TikTik
-publishDate: "2023"
-tag: Unity 2D
+publishDate: 2023
+tag: Unity 3D, Puzzle, Multiplayer
 ---
+
 ::
 
 <!-- Project gallery -->
@@ -52,7 +54,6 @@ tag: Unity 2D
         Affiliation: University of Geneva
         ::::
 
-
 <!-- . Objective -->
         ::::projects-left-block
         #title
@@ -72,7 +73,6 @@ tag: Unity 2D
         ::::
     :::
 
-
 <!-- . Challenge -->
     :::projects-right-section
     #title
@@ -86,11 +86,13 @@ tag: Unity 2D
     :::
 ::
 
-## Watch the video !
+## Watch the video
 
 ::cloudinary-video
 ---
+
 videoId: tiktik.com.video-com_zl3hir.mp4
 ---
+
 ::
 <!-- Related projects -->
