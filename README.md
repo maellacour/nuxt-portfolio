@@ -1,33 +1,40 @@
-![nuxt-ui-landing-social-card](https://github.com/nuxt-ui-pro/landing/assets/739984/d0919c96-e5f2-47e9-b460-44f87341218d)
+# Mael Lacour - Portfolio
 
-# Nuxt UI Pro - Landing template
+This is the repository for my personal portfolio: **Mael Lacour | Lead Engineer / Full Stack Developer**. It showcases my work on Web and Unity development.
+Built with [Nuxt.js](https://nuxt.com/), [Nuxt UI Pro](https://ui.nuxt.com/pro), and [Nuxt Content](https://content.nuxt.com/).
 
-This starter lets you get started with [Nuxt UI Pro](https://ui.nuxt.com/pro) quickly.
+## Features
 
-[![Nuxt UI Pro](https://img.shields.io/badge/Made%20with-Nuxt%20UI%20Pro-00DC82?logo=nuxt.js&labelColor=020420)](https://ui.nuxt.com/pro)
+- Responsive design built with [Nuxt UI Pro](https://ui.nuxt.com/pro) and [Tailwind CSS](https://tailwindcss.com/).
+- Project and page content managed using [Nuxt Content](https://content.nuxt.com/) (see [content/](content/)).
+- Image optimization and delivery via [@nuxtjs/cloudinary](https://cloudinary.nuxtjs.org/).
+- SEO enhancements with [@nuxtjs/seo](https://nuxt.com/modules/seo).
+- Dark mode support.
+- Site configuration managed in [nuxt.config.ts](nuxt.config.ts) and [app/app.config.ts](app/app.config.ts).
 
-- [Live demo](https://landing-template.nuxt.dev/)
-- [Play on Stackblitz](https://stackblitz.com/github/nuxt-ui-pro/landing)
-- [Documentation](https://ui.nuxt.com/pro/getting-started)
+## Tech Stack
 
-https://github.com/nuxt-ui-pro/landing/assets/904724/c7dd64a4-a09c-4cab-9572-92a02a5e06f9
-
-## Quick Start
-
-```bash [Terminal]
-npx nuxi init -t github:nuxt-ui-pro/landing
-```
+- [Nuxt 3](https://nuxt.com/)
+- [Vue 3](https://vuejs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Nuxt UI Pro](https://ui.nuxt.com/pro)
+- [Nuxt Content](https://content.nuxt.com/)
+- [@nuxtjs/cloudinary](https://cloudinary.nuxtjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
 
 ## Setup
 
-Make sure to install the dependencies:
+Make sure to install the dependencies using pnpm (as indicated by `pnpm-lock.yaml`):
+
+```bash
+pnpm install
+```
+
+If you prefer other package managers:
 
 ```bash
 # npm
 npm install
-
-# pnpm
-pnpm install
 
 # yarn
 yarn install
@@ -41,17 +48,8 @@ bun install
 Start the development server on `http://localhost:3000`:
 
 ```bash
-# npm
-npm run dev
-
 # pnpm
 pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
 ## Production
@@ -59,37 +57,33 @@ bun run dev
 Build the application for production:
 
 ```bash
-# npm
-npm run build
-
 # pnpm
 pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
 ```
 
 Locally preview production build:
 
 ```bash
-# npm
-npm run preview
-
 # pnpm
 pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Check out the [Nuxt deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
 
-## Renovate integration
+## Project Structure Highlights
 
-Install [Renovate GitHub app](https://github.com/apps/renovate/installations/select_target) on your repository and you are good to go.
+- `app/`: Contains the core application Vue components, layouts, and pages.
+  - [`app/app.vue`](app/app.vue): Main application component.
+  - [`app/pages/index.vue`](app/pages/index.vue): Homepage.
+  - [`app/pages/projects/[...slug].vue`](app/pages/projects/[...slug].vue): Project detail pages.
+  - [`app/components/`](app/components/): Global and reusable Vue components.
+- `content/`: Markdown files for project details and site content.
+  - [`content/index.yml`](content/index.yml): Main content for the homepage.
+  - [`content/projects/`](content/projects/): Individual project markdown files.
+- `public/`: Static assets.
+- [`nuxt.config.ts`](nuxt.config.ts): Nuxt configuration file.
+- [`package.json`](package.json): Project dependencies and scripts.
+
+## Cloudinary
+
+This portfolio utilizes [Cloudinary](https://cloudinary.com/) for hosting all project images. The [@nuxtjs/cloudinary](https://cloudinary.nuxtjs.org/) module is integrated to handle image optimization and delivery, ensuring fast loading times and responsive images across different devices.
