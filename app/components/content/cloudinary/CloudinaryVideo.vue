@@ -1,15 +1,11 @@
 <template>
   <div class="mx-auto">
-    <CldVideoPlayer
-      width="1920"
-      height="1080"
-      :src="videoId"
-    />
+    <CldVideoPlayer width="1920" height="1080" :src="props.videoId" />
   </div>
 </template>
 
 <script lang="ts" setup>
-defineProps({
+const props = defineProps({
   videoId: {
     type: String,
     default: ''
