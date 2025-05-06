@@ -1,6 +1,7 @@
 <template>
-  <div>
+  <div v-if="page">
     <ULandingHero
+      id="hero"
       :title="page.hero.title"
       :description="page.hero.description"
       :links="page.hero.links"
@@ -23,6 +24,7 @@
       :description="page.projects.description"
     >
       <UPageGrid
+        v-if="projects && projects.length"
         id="projects"
         class="scroll-mt-[calc(var(--header-height)+140px+128px+96px)]"
       >
@@ -95,6 +97,9 @@
       </template>
     </ULandingSection>
   </div>
+  <div v-else>
+    <p>Loading...</p>
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -104,20 +109,28 @@ const { data: page } = await useAsyncData('index', () => queryContent('/').findO
 const { data: projects } = await useAsyncData('projects', () => queryContent('/projects').where({ _partial: false }).find())
 
 useSeoMeta({
-  title: page.value.title || 'Mael Lacour',
+  title: page.value?.title || 'Mael Lacour',
   ogImage: '/og.png',
-  description: page.value.description || 'A portfolio where I showcase my work on web and Unity development.',
+  description: page.value?.description || 'A portfolio where I showcase my work on web and Unity development.',
   titleTemplate: '%s',
   twitterImage: '/og.png',
   twitterCard: 'summary_large_image',
-  twitterTitle: page.value.title || 'Mael Lacour',
-  twitterDescription: page.value.description || 'A portfolio where I showcase my work on web and Unity development.'
+  twitterTitle: page.value?.title || 'Mael Lacour',
+  twitterDescription: page.value?.description || 'A portfolio where I showcase my work on web and Unity development.'
 })
 
-defineOgImageComponent('Home',
-  {
-    title: page.value.hero.title,
-    image: page.value.ogimage
-  }
-)
+if (page.value) {
+  defineOgImageComponent('Home', {
+    title: page.value.hero?.title || 'Welcome to My Portfolio',
+    // Use page.value.ogimage if it's the intended main OG image for the hero section
+    // otherwise, page.value.hero.image.name might be more specific if that's the hero image
+    image: page.value.ogimage || page.value.hero?.image?.name || '/og.png'
+  });
+} else {
+  // Define a generic OG image if page data is not available
+  defineOgImageComponent('Home', {
+    title: 'Mael Lacour | Portfolio',
+    image: '/og.png' // Default site OG image
+  });
+}
 </script>

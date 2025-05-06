@@ -1,3 +1,5 @@
+import { defineAppConfig } from 'nuxt/app'
+
 export default defineAppConfig({
   ui: {
     primary: 'indigo',
@@ -37,6 +39,16 @@ export default defineAppConfig({
       bottom: {
         wrapper: 'border-t border-gray-200 dark:border-gray-800'
       }
+    },
+    scrollspy: {
+      // Default threshold for useScrollspy includes 0, meaning 1px visible makes it active.
+      // Adjust this value to control how much of a section needs to be visible
+      // before it's considered "active" by the scrollspy.
+      //
+      // For example:
+      // threshold: 0.1  // 10% of the section must be visible
+      // threshold: 0.5  // 50% of the section must be visible
+      threshold: 0.4
     }
   }
 })
