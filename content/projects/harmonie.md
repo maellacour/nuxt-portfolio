@@ -43,8 +43,8 @@ tag: Mobile, Flutter
         Partners
 
         #details
-        Haute École de Santé de Genève
-        Haute École de Musique de Genève
+        Haute École de Santé de Genève  
+        Haute École de Musique de Genève  
         ...
         ::::
 
@@ -79,5 +79,4 @@ tag: Mobile, Flutter
     :::
 ::
 
-::
 <!-- Related projects -->
