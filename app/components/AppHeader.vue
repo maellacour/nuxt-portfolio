@@ -38,7 +38,7 @@ nuxtApp.hooks.hookOnce('page:finish', () => {
       <UColorModeButton />
       <!-- Add me list of buttons -->
       <UButton icon="i-simple-icons-linkedin" to="https://www.linkedin.com/in/mael-lacour/" color="gray" trailing />
-      <UButton icon="i-simple-icons-github" to="https://github.com/Eyap53" color="gray" trailing />
+      <UButton icon="i-simple-icons-github" to="https://github.com/maellacour" color="gray" trailing />
     </template>
   </UHeader>
 </template>
