@@ -17,7 +17,7 @@ hero:
 projects:
   title: Projects
   description: >
-    I’m proud to showcase a selection of my most beautiful and meaningful projects, all of which I developed from start to finish.
+    I’m proud to showcase a selection of my most beautiful and meaningful projects, all of which I developed from start to finish.<br />
     If you’re curious about my contributions to libraries or open-source work, check out my <a href="https://github.com/maellacour" target="_blank">GitHub</a>!
 aboutme:
   title: About me
