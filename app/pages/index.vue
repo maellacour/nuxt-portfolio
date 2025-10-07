@@ -21,8 +21,13 @@
 
     <ULandingSection
       :title="page.projects.title"
-      :description="page.projects.description"
     >
+      <template #description>
+        <div
+          v-if="page.projects.description"
+          v-html="page.projects.description"
+        />
+      </template>
       <UPageGrid
         v-if="projects && projects.length"
         id="projects"
