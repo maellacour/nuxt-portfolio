@@ -16,7 +16,9 @@ hero:
     alt: Mael Lacour
 projects:
   title: Projects
-  description: Some beautiful and very interesting projects that I have worked on.
+  description: >
+    I’m proud to showcase a selection of my most beautiful and meaningful projects, all of which I developed from start to finish.
+    If you’re curious about my contributions to libraries or open-source work, check out my <a href="https://github.com/maellacour" target="_blank">GitHub</a>!
 aboutme:
   title: About me
   description: >
