@@ -1,7 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  extends: [process.env.NUXT_UI_PRO_PATH || '@nuxt/ui-pro'],
-
   modules: [
     '@nuxt/content',
     '@nuxt/eslint',
@@ -67,10 +65,5 @@ export default defineNuxtConfig({
     url: process.env.NUXT_PUBLIC_SITE_URL || 'http://localhost:3000',
     defaultLocale: 'en' // not needed if you have @nuxtjs/i18n installed
   },
-
-  cloudflareAnalytics: {
-    token: process.env.CLOUDFLARE_ANALYTICS_TOKEN
-  },
-
   compatibilityDate: '2024-07-04'
 })
