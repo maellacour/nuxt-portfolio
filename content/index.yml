@@ -4,6 +4,9 @@ ogimage: profil-with-headset_kltqvr.jpg
 hero:
   title: "Hey, I'm Mael Lacour"
   description: "Lead Engineer / Full Stack Developer passionate about creating beautiful and functional web applications and 3D experiences."
+  image:
+    name: profil-with-headset_kltqvr.jpg
+    alt: Mael Lacour
   links:
     - label: Download CV
       icon: i-heroicons-arrow-down-circle

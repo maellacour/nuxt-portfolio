@@ -10,39 +10,13 @@ defineProps<{
 
 <template>
   <UPageHero
+    orientation="horizontal"
     :ui="{
-      headline: 'flex items-center justify-center',
-      title: 'text-shadow-md max-w-lg mx-auto',
-      links: 'mt-4 flex-col justify-center items-center'
+      title: 'text-shadow-md',
+      description: 'mt-4',
+      links: 'mt-6'
     }"
   >
-    <template #headline>
-      <Motion
-        :initial="{
-          scale: 1.1,
-          opacity: 0,
-          filter: 'blur(20px)'
-        }"
-        :animate="{
-          scale: 1,
-          opacity: 1,
-          filter: 'blur(0px)'
-        }"
-        :transition="{
-          duration: 0.6,
-          delay: 0.1
-        }"
-      >
-        <CldImage
-          :src="global.picture?.light!"
-          :alt="global.picture?.alt!"
-          class="size-18 rounded-full ring ring-default ring-offset-3 ring-offset-(--ui-bg)"
-          width="144"
-          height="144"
-          format="webp"
-        />
-      </Motion>
-    </template>
 
     <template #title>
       <Motion
@@ -105,56 +79,85 @@ defineProps<{
       >
         <div
           v-if="page.hero?.links"
-          class="flex items-center gap-2"
+          class="flex flex-col items-center gap-3"
         >
-          <UButton v-bind="page.hero.links[0]" />
-          <UButton
-            :color="global.available ? 'success' : 'error'"
-            variant="ghost"
-            class="gap-2"
-            :label="global.available ? 'Available for new projects' : 'Not available at the moment'"
-          >
-            <template #leading>
-              <span class="relative flex size-2">
-                <span
-                  class="absolute inline-flex size-full rounded-full opacity-75"
-                  :class="global.available ? 'bg-success animate-ping' : 'bg-error'"
-                />
-                <span
-                  class="relative inline-flex size-2 scale-90 rounded-full"
-                  :class="global.available ? 'bg-success' : 'bg-error'"
-                />
-              </span>
-            </template>
-          </UButton>
+          <div class="flex items-center gap-2">
+            <UButton v-bind="page.hero.links[0]" />
+            <UButton
+              :color="global.available ? 'success' : 'error'"
+              variant="ghost"
+              class="gap-2"
+              :label="global.available ? 'Available for new projects' : 'Not available at the moment'"
+            >
+              <template #leading>
+                <span class="relative flex size-2">
+                  <span
+                    class="absolute inline-flex size-full rounded-full opacity-75"
+                    :class="global.available ? 'bg-success animate-ping' : 'bg-error'"
+                  />
+                  <span
+                    class="relative inline-flex size-2 scale-90 rounded-full"
+                    :class="global.available ? 'bg-success' : 'bg-error'"
+                  />
+                </span>
+              </template>
+            </UButton>
+          </div>
+
+          <div class="flex gap-x-4">
+            <Motion
+              v-for="(link, index) of footer?.links"
+              :key="index"
+              :initial="{
+                scale: 1.1,
+                opacity: 0,
+                filter: 'blur(20px)'
+              }"
+              :animate="{
+                scale: 1,
+                opacity: 1,
+                filter: 'blur(0px)'
+              }"
+              :transition="{
+                duration: 0.6,
+                delay: 0.6 + index * 0.1
+              }"
+            >
+              <UButton
+                v-bind="{ size: 'md', color: 'neutral', variant: 'ghost', ...link }"
+              />
+            </Motion>
+          </div>
         </div>
       </Motion>
-
-      <div class="gap-x-4 inline-flex mt-4">
-        <Motion
-          v-for="(link, index) of footer?.links"
-          :key="index"
-
-          :initial="{
-            scale: 1.1,
-            opacity: 0,
-            filter: 'blur(20px)'
-          }"
-          :animate="{
-            scale: 1,
-            opacity: 1,
-            filter: 'blur(0px)'
-          }"
-          :transition="{
-            duration: 0.6,
-            delay: 0.5 + index * 0.1
-          }"
-        >
-          <UButton
-            v-bind="{ size: 'md', color: 'neutral', variant: 'ghost', ...link }"
-          />
-        </Motion>
-      </div>
     </template>
+
+    <Motion
+      v-if="page.hero?.image || global.picture?.light"
+      :initial="{
+        x: 40,
+        opacity: 0,
+        filter: 'blur(10px)'
+      }"
+      :animate="{
+        x: 0,
+        opacity: 1,
+        filter: 'blur(0px)'
+      }"
+      :transition="{
+        duration: 0.8,
+        delay: 0.2
+      }"
+    >
+      <CldImage
+        :src="page.hero?.image?.name || global.picture?.light!"
+        :alt="page.hero?.image?.alt || global.picture?.alt!"
+        class="rounded-2xl shadow-2xl"
+        width="600"
+        height="600"
+        sizes="(max-width: 768px) 100vw, 50vw"
+        format="webp"
+      />
+    </Motion>
   </UPageHero>
 </template>
