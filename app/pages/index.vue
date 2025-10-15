@@ -1,6 +1,6 @@
 <template>
   <div v-if="page">
-    <ULandingHero
+    <UPageHero
       id="hero"
       :title="page.hero.title"
       :description="page.hero.description"
@@ -17,9 +17,9 @@
         sizes="(max-width: 1024px) 100vw, 50vw"
         format="webp"
       />
-    </ULandingHero>
+    </UPageHero>
 
-    <ULandingSection
+    <UPageSection
       :title="page.projects.title"
     >
       <template #description>
@@ -28,39 +28,53 @@
           v-html="page.projects.description"
         />
       </template>
-      <UPageGrid
+      <div
         v-if="projects && projects.length"
         id="projects"
-        class="scroll-mt-[calc(var(--header-height)+140px+128px+96px)]"
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 scroll-mt-[calc(var(--header-height)+140px+128px+96px)]"
       >
-        <ULandingCard
+        <UCard
           v-for="(item, index) in projects"
           :key="index"
-          v-bind="item"
           :to="`/projects/${item.title.toLowerCase().replace(/ /g, '-')}`"
-          orientation="vertical"
           class="text-justify"
         >
-          <CldImage
-            :src="item.image"
-            :alt="item.title"
-            class="rounded-xl cursor-pointer shadow-lg sm:shadow-none"
-            width="1024"
-            height="600"
-            sizes="(max-width: 640px) 100vw, (max-width: 1080px) 50vw, 33vw"
-            format="webp"
-          />
-        </ULandingCard>
-      </UPageGrid>
-    </ULandingSection>
+          <template #header>
+            <CldImage
+              :src="item.image"
+              :alt="item.title"
+              class="w-full rounded-t-lg"
+              width="1024"
+              height="600"
+              sizes="(max-width: 640px) 100vw, (max-width: 1080px) 50vw, 33vw"
+              format="webp"
+            />
+          </template>
+          <div class="space-y-2">
+            <h3 class="text-xl font-semibold">
+              {{ item.title }}
+            </h3>
+            <p class="text-gray-600 dark:text-gray-400">
+              {{ item.description }}
+            </p>
+          </div>
+        </UCard>
+      </div>
+    </UPageSection>
 
-    <ULandingSection
+    <UPageSection
       id="aboutme"
       :title="page.aboutme.title"
-      :description="page.aboutme.description"
-      :align="page.aboutme.align"
+      orientation="horizontal"
+      :reverse="page.aboutme.align === 'right'"
       class="scroll-mt-[var(--header-height)] text-justify"
     >
+      <template #description>
+        <div
+          v-if="page.aboutme.description"
+          v-html="page.aboutme.description"
+        />
+      </template>
       <CldImage
         :src="page.aboutme.image.name"
         :alt="page.aboutme.image.alt"
@@ -70,21 +84,22 @@
         sizes="(max-width: 1024px) 100vw, 50vw"
         format="webp"
       />
-      <template #description>
-        <div
-          v-if="page.aboutme.description"
-          v-html="page.aboutme.description"
-        />
-      </template>
-    </ULandingSection>
+    </UPageSection>
 
-    <ULandingSection
+    <UPageSection
       id="contact"
       :title="page.contact.title"
-      :align="page.contact.align"
+      orientation="horizontal"
+      :reverse="page.contact.align === 'right'"
       :links="page.socials"
       class="scroll-mt-[var(--header-height)] text-justify"
     >
+      <template #description>
+        <div
+          v-if="page.contact.description"
+          v-html="page.contact.description"
+        />
+      </template>
       <CldImage
         :src="page.contact.image.name"
         :alt="page.contact.image.alt"
@@ -94,13 +109,7 @@
         sizes="(max-width: 1024px) 100vw, 50vw"
         format="webp"
       />
-      <template #description>
-        <div
-          v-if="page.contact.description"
-          v-html="page.contact.description"
-        />
-      </template>
-    </ULandingSection>
+    </UPageSection>
   </div>
   <div v-else>
     <p>Loading...</p>
@@ -110,8 +119,8 @@
 <script setup lang="ts">
 import { useSeoMeta, defineOgImageComponent } from '#imports'
 
-const { data: page } = await useAsyncData('index', () => queryContent('/').findOne())
-const { data: projects } = await useAsyncData('projects', () => queryContent('/projects').where({ _partial: false }).find())
+const { data: page } = await useAsyncData('index', () => queryCollection('index').first())
+const { data: projects } = await useAsyncData('projects', () => queryCollection('content').where({ _path: { $contains: '/projects/' } }).all())
 
 useSeoMeta({
   title: page.value?.title || 'Mael Lacour',
