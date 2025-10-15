@@ -19,8 +19,8 @@ export default defineNuxtConfig({
     }
   },
 
-  ui: {
-    icons: ['heroicons', 'simple-icons']
+  icon: {
+    collections: ['heroicons', 'simple-icons']
   },
 
   routeRules: {
