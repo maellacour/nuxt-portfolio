@@ -7,8 +7,7 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@nuxt/fonts',
     '@nuxtjs/cloudinary',
-    '@nuxtjs/seo',
-    'nuxt-cloudflare-analytics'
+    '@nuxtjs/seo'
   ],
 
   hooks: {
