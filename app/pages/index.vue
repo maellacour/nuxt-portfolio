@@ -1,5 +1,5 @@
 <template>
-  <div v-if="page">
+  <UPage v-if="page">
     <UPageHero
       id="hero"
       :title="page.hero.title"
@@ -110,10 +110,12 @@
         format="webp"
       />
     </UPageSection>
-  </div>
-  <div v-else>
-    <p>Loading...</p>
-  </div>
+  </UPage>
+  <UPage v-else>
+    <div class="container mx-auto px-4 py-16">
+      <p>Loading...</p>
+    </div>
+  </UPage>
 </template>
 
 <script setup lang="ts">

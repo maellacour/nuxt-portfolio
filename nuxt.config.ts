@@ -18,7 +18,7 @@ export default defineNuxtConfig({
       globals.forEach(c => c.global = true)
     }
   },
-
+  css: ['~/assets/css/main.css'],
   icon: {
     collections: ['heroicons', 'simple-icons']
   },
