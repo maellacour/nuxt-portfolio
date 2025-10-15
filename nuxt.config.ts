@@ -1,13 +1,16 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: [
-    '@nuxt/content',
     '@nuxt/eslint',
     '@nuxt/image',
     '@nuxt/ui',
+    '@nuxt/content',
     '@nuxt/fonts',
     '@nuxtjs/cloudinary',
-    '@nuxtjs/seo'
+    '@nuxtjs/seo',
+    '@vueuse/nuxt',
+    'nuxt-og-image',
+    'motion-v/nuxt'
   ],
 
   hooks: {
@@ -18,31 +21,24 @@ export default defineNuxtConfig({
       globals.forEach(c => c.global = true)
     }
   },
+
+  devtools: {
+    enabled: true
+  },
+
   css: ['~/assets/css/main.css'],
+
   icon: {
     collections: ['heroicons', 'simple-icons']
   },
 
-  routeRules: {
-    '/': { prerender: true }
-  },
   nitro: {
-    static: true
-  },
-
-  devtools: {
-    enabled: true,
-
-    timeline: {
-      enabled: true
+    prerender: {
+      routes: ['/'],
+      crawlLinks: true
     }
   },
-  typescript: {
-    strict: false
-  },
-  future: {
-    compatibilityVersion: 4
-  },
+
   eslint: {
     config: {
       stylistic: {
@@ -62,7 +58,8 @@ export default defineNuxtConfig({
     description: 'A portfolio where I showcase my work on web and Unity development.',
     logo: '/logo.png',
     url: process.env.NUXT_PUBLIC_SITE_URL || 'http://localhost:3000',
-    defaultLocale: 'en' // not needed if you have @nuxtjs/i18n installed
+    defaultLocale: 'en'
   },
-  compatibilityDate: '2024-07-04'
+
+  compatibilityDate: '2024-11-01'
 })

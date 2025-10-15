@@ -1,44 +1,26 @@
 <script setup lang="ts">
-const nuxtApp = useNuxtApp()
-const { activeHeadings, updateHeadings } = useScrollspy()
+import type { NavigationMenuItem } from '@nuxt/ui'
 
-const links = computed(() => [{
-  label: 'Projects',
-  to: '/#projects',
-  icon: 'i-heroicons-cube-transparent',
-  // active: activeHeadings.value.includes('projects') && !activeHeadings.value.includes('aboutme')
-}, {
-  label: 'About Me',
-  to: '/#aboutme',
-  icon: 'i-heroicons-credit-card',
-  // active: activeHeadings.value.includes('aboutme') && !activeHeadings.value.includes('contact')
-}, {
-  label: 'Contact',
-  to: '/#contact',
-  icon: 'i-heroicons-academic-cap',
-  // active: activeHeadings.value.includes('contact')
-}])
-
-nuxtApp.hooks.hookOnce('page:finish', () => {
-  updateHeadings([
-    document.querySelector('#projects'),
-    document.querySelector('#aboutme'),
-    document.querySelector('#contact')
-  ])
-})
+defineProps<{
+  links: NavigationMenuItem[]
+}>()
 </script>
 
 <template>
-  <UHeader :links="links">
-    <template #logo>
-      Mael Lacour
-    </template>
-
-    <template #right>
-      <UColorModeButton />
-      <!-- Add me list of buttons -->
-      <UButton icon="i-simple-icons-linkedin" to="https://www.linkedin.com/in/mael-lacour/" color="gray" trailing />
-      <UButton icon="i-simple-icons-github" to="https://github.com/maellacour" color="gray" trailing />
-    </template>
-  </UHeader>
+  <div class="fixed top-2 sm:top-4 mx-auto left-1/2 transform -translate-x-1/2 z-10">
+    <UNavigationMenu
+      :items="links"
+      variant="link"
+      color="neutral"
+      class="bg-muted/80 backdrop-blur-sm rounded-full px-2 sm:px-4 border border-muted/50 shadow-lg shadow-neutral-950/5"
+      :ui="{
+        link: 'px-2 py-1',
+        linkLeadingIcon: 'hidden'
+      }"
+    >
+      <template #list-trailing>
+        <ColorModeButton />
+      </template>
+    </UNavigationMenu>
+  </div>
 </template>

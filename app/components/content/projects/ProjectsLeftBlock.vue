@@ -1,20 +1,10 @@
 <template>
-  <!-- Single project client details -->
-  <div class="mb-7">
-    <p
-      class="
-                font-general-medium
-                text-2xl text-secondary-dark
-                dark:text-secondary-light
-                mb-2
-              "
-    >
+  <div class="mb-8">
+    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">
       <slot name="title" />
-    </p>
-    <p
-      class="font-general-regular text-primary-dark dark:text-ternary-light"
-    >
+    </h3>
+    <div class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
       <slot name="details" />
-    </p>
+    </div>
   </div>
 </template>

@@ -21,7 +21,10 @@
     "@nuxt/ui": "^4.0.1",
     "@nuxtjs/cloudinary": "^4.0.0",
     "@nuxtjs/seo": "^3.2.2",
-    "better-sqlite3": "^12.4.1"
+    "@vueuse/nuxt": "^13.9.0",
+    "better-sqlite3": "^12.4.1",
+    "motion-v": "^1.7.2",
+    "nuxt-og-image": "^5.1.11"
   },
   "devDependencies": {
     "@nuxt/eslint": "^1.9.0",
