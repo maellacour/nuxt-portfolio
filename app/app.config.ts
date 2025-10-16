@@ -1,7 +1,20 @@
 export default defineAppConfig({
+  global: {
+    picture: {
+      dark: 'profil-with-headset_kltqvr.jpg',
+      light: 'profil-with-headset_kltqvr.jpg',
+      alt: 'Mael Lacour profile picture'
+    },
+    email: 'contact.dev at maellacour.com',
+    available: true,
+    linkedin: 'https://www.linkedin.com/in/mael-lacour/',
+    github: 'https://github.com/maellacour'
+  },
   ui: {
-    primary: 'indigo',
-    gray: 'zinc',
+    colors: {
+      primary: 'indigo',
+      neutral: 'zinc'
+    },
     variables: {
       light: {
         background: 'var(--color-gray-50)'
@@ -10,43 +23,27 @@ export default defineAppConfig({
         background: 'var(--color-gray-900)'
       }
     },
-    button: {
-      rounded: 'rounded-full',
-      default: {
-        size: 'md',
-        color: 'black'
+    pageHero: {
+      slots: {
+        container: 'py-18 sm:py-24 lg:py-32',
+        title: 'mx-auto max-w-xl text-pretty text-3xl sm:text-4xl lg:text-5xl',
+        description: 'mt-2 text-md mx-auto max-w-2xl text-pretty sm:text-md text-muted'
       }
-    },
-    input: {
-      rounded: 'rounded-full'
-    },
-    header: {
-      wrapper: 'lg:!border-transparent bg-gray-50 dark:bg-gray-900',
-      links: {
-        wrapper: 'ring-1 ring-gray-200 dark:ring-gray-800 px-3 gap-x-0 rounded-full',
-        base: 'py-2 px-4 font-medium transition-colors relative after:absolute after:-bottom-px after:inset-x-2 after:h-px after:rounded-full after:opacity-0 after:bg-gray-900 dark:after:bg-white after:transition-opacity',
-        active: 'text-gray-900 dark:text-white after:opacity-100',
-        inactive: 'text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200'
-      }
-    },
-    footer: {
-      top: {
-        wrapper: 'border-t border-gray-200 dark:border-gray-800',
-        container: 'py-8 lg:py-16'
-      },
-      bottom: {
-        wrapper: 'border-t border-gray-200 dark:border-gray-800'
-      }
-    },
-    scrollspy: {
-      // Default threshold for useScrollspy includes 0, meaning 1px visible makes it active.
-      // Adjust this value to control how much of a section needs to be visible
-      // before it's considered "active" by the scrollspy.
-      //
-      // For example:
-      // threshold: 0.1  // 10% of the section must be visible
-      // threshold: 0.5  // 50% of the section must be visible
-      threshold: 0.4
     }
+  },
+  footer: {
+    credits: `Built with Nuxt UI • © ${new Date().getFullYear()} Mael Lacour`,
+    colorMode: false,
+    links: [{
+      icon: 'i-simple-icons-linkedin',
+      to: 'https://www.linkedin.com/in/mael-lacour/',
+      target: '_blank',
+      'aria-label': 'LinkedIn'
+    }, {
+      icon: 'i-simple-icons-github',
+      to: 'https://github.com/maellacour',
+      target: '_blank',
+      'aria-label': 'GitHub'
+    }]
   }
 })

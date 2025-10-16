@@ -1,16 +1,3 @@
-<template>
-  <div>
-    <NuxtLoadingIndicator />
-    <AppHeader />
-
-    <UMain>
-      <NuxtPage />
-    </UMain>
-
-    <AppFooter />
-  </div>
-</template>
-
 <script setup lang="ts">
 const colorMode = useColorMode()
 
@@ -29,4 +16,20 @@ useHead({
     lang: 'en'
   }
 })
+
+useSeoMeta({
+  titleTemplate: '%s - Mael Lacour',
+  ogImage: '/og.png',
+  twitterCard: 'summary_large_image'
+})
 </script>
+
+<template>
+  <UApp>
+    <NuxtLayout>
+      <UMain class="relative">
+        <NuxtPage />
+      </UMain>
+    </NuxtLayout>
+  </UApp>
+</template>

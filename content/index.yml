@@ -1,56 +1,41 @@
-title: Mael Lacour | Lead Engineer / Full Stack Developer
-description: Here's a portfolio where I showcase my work on Web and Unity development.
+title: "Hey, I'm Mael Lacour"
+description: "Lead Engineer / Full Stack Developer passionate about creating beautiful and functional web applications and 3D experiences. Based in Geneva, bringing ideas to life through code and creativity."
 ogimage: profil-with-headset_kltqvr.jpg
 hero:
-  title: Hey, It's Mael Lacour
-  description: A passionate developer who loves to create beautiful and functional websites and applications. Always looking for new challenges and opportunities to learn and grow.
-  links:
-    - label: Download CV
-      icon: i-heroicons-arrow-down-circle
-      size: xl
-      color: gray
-      to: "LACOUR.Mael.Resume.No-Tel.pdf"
-      target: _blank
+  title: "Hey, I'm Mael Lacour"
+  description: "Lead Engineer / Full Stack Developer passionate about creating beautiful and functional web applications and 3D experiences."
   image:
     name: profil-with-headset_kltqvr.jpg
     alt: Mael Lacour
+  links:
+    - label: Download CV
+      icon: i-heroicons-arrow-down-circle
+      size: lg
+      color: neutral
+      to: "LACOUR.Mael.Resume.No-Tel.pdf"
+      target: _blank
 projects:
-  title: Projects
-  description: >
-    I’m proud to showcase a selection of my most beautiful and meaningful projects, all of which I developed from start to finish.<br />
-    If you’re curious about my contributions to libraries or open-source work, check out my <a href="https://github.com/maellacour" target="_blank">GitHub</a>!
-aboutme:
-  title: About me
-  description: >
-    <p>During my general engineering training, I discovered my passion for project development, especially in the realm of computer science.
-    This realization naturally led me to focus on 2D and 3D technologies, fields that offer a vast array of exciting possibilities.
-    My love for learning has driven me to continuously expand my skill set, diving deep into various tools and languages.<br />
-    After my start with with web development, I ventured into the fascinating world of 3D graphics, mastering Unity and Blender.
-    My curiosity didn't stop there – I then delved into C#, the HLSL shader language and its Shader Nodes counterpart among other tools and technologies.
-    The list of things I've explored is extensive, but I always thrive on the challenge of mastering each new one !</p>
-    <br />
-    <p>In my professional roles, I have always prioritized quality and resilience.
-    I believe that applications should not only be functional but also robust and adaptable.
-    My aim is to deliver solutions that empower my partners, giving them the tools they need to achieve true autonomy and success in their endeavors.</p>
-  align: right
+  title: Featured Projects
+  description: "A selection of my most meaningful projects, showcasing full-stack development, 3D experiences, and innovative solutions. Each project demonstrates my commitment to quality, user experience, and technical excellence."
+about:
+  title: About Me
+  description: |
+    <p>During my general engineering training, I discovered my passion for project development, especially in the realm of computer science. This realization naturally led me to focus on 2D and 3D technologies, fields that offer a vast array of exciting possibilities. My love for learning has driven me to continuously expand my skill set, diving deep into various tools and languages.</p>
+    <br>
+    <p>After my start with web development, I ventured into the fascinating world of 3D graphics, mastering Unity and Blender. My curiosity didn't stop there – I then delved into C#, the HLSL shader language and its Shader Nodes counterpart among other tools and technologies. The list of things I've explored is extensive, but I always thrive on the challenge of mastering each new one!</p>
+    <br>
+    <p>In my professional roles, I have always prioritized quality and resilience. I believe that applications should not only be functional but also robust and adaptable. My aim is to deliver solutions that empower my partners, giving them the tools they need to achieve true autonomy and success in their endeavors.</p>
   image:
     name: mael.office.square.grayscale_enkzmk.jpg
-    alt: Mael Lacour
+    alt: Mael Lacour in his office
 contact:
-  title: Contact me
-  description: >
-    <p>Do you have a new challenge to share ?<br />
-    <p>Some interesting and innovative ideas ?<br />
-    Don't hesitate :)
-    </p>
-    <br />
-    <p>
-    You can send me an email to :<br/>
-    <span class="i-heroicons-envelope"></span>  contact.dev at maellacour.com
-    </p>
-    <br />
-    <p>Let's make it FLY !</p>
-  align: left
+  title: Let's Connect
+  description: |
+    <p>Do you have a new challenge to share? Some interesting and innovative ideas? Don't hesitate to reach out!</p>
+    <br>
+    <p>I'm always interested in discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+    <br>
+    <p><strong>Let's make it FLY!</strong></p>
   image:
     name: parapente2_zeuwf9
     alt: Paragliding over Geneva Lake

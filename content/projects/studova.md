@@ -1,7 +1,7 @@
 ---
 title: 'Studova'
 description: 'A comprehensive SaaS platform for researchers to design, deploy, and manage cognitive and behavioral studies with flexible data collection, participant tracking, and team collaboration capabilities.'
-image: studova-hero.png
+image: Studova-hero_p7swln.png
 date: 2024
 ---
 
@@ -46,17 +46,17 @@ tag: Full-Stack, SaaS, Research Platform
     alt: Progressions Overview
     ---
     :::
-        :::projects-gallery-image
+    :::projects-gallery-image
     ---
     name: 2025-10-14.Results_bq5tsc.png
-    index: 3
+    index: 4
     alt: Results Overview
     ---
     :::
-        :::projects-gallery-image
+    :::projects-gallery-image
     ---
     name: 2025-10-14.Participant_Dashboard_hdqlki.png
-    index: 3
+    index: 5
     alt: Participant Dashboard
     ---
     :::
@@ -81,7 +81,7 @@ tag: Full-Stack, SaaS, Research Platform
         Try it out
 
         #details
-        [Launch Demo](https://studova.app) 🚀
+        [Launch Demo](https://studova.vercel.app) 🚀
         ::::
 
 <!-- . Objective -->
