@@ -38,6 +38,15 @@
       "undici@<5.28.4": ">=5.28.4",
       "braces@<3.0.3": ">=3.0.3",
       "ws@>=8.0.0 <8.17.1": ">=8.17.1"
-    }
+    },
+    "onlyBuiltDependencies": [
+      "@parcel/watcher",
+      "@tailwindcss/oxide",
+      "better-sqlite3",
+      "esbuild",
+      "sharp",
+      "unrs-resolver",
+      "vue-demi"
+    ]
   }
 }
