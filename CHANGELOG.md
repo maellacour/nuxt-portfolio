@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - **Project content** — rewrote copy for all 6 projects (Studova, NeuroTrainer, HarMoNie, EcoRescue, TikTik, Borgia) to align with personal branding: punchy front matter descriptions, first-person challenge narratives leading with the engineering problem, precise institution names, removed forward-looking claims; added Funding block to EcoRescue; renamed NeuroTrainer's partner block to "Clinical partner"
+- **Footer** - Update credits
 
 ## [1.4.0] - 2026-02-26
 

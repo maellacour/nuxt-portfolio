@@ -32,7 +32,7 @@ export default defineAppConfig({
     }
   },
   footer: {
-    credits: `Built with Nuxt UI • © ${new Date().getFullYear()} Mael Lacour`,
+    credits: `© ${new Date().getFullYear()} Mael Lacour`,
     colorMode: false,
     links: [{
       'icon': 'i-simple-icons-linkedin',
