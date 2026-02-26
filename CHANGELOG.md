@@ -13,13 +13,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - **Trust section** (`LandingTrust`) — replaces the minimal credentials bar with a full `UPageSection` featuring 6 icon-driven cards (EPFL, UNIGE, HUG, Airbus, Unity Certified Expert, Arts et Métiers ParisTech), a descriptive subtitle, and a bottom CTA linking to the contact section
+- **Projects**: Add Borgia project.
 
 ### Changed
 
 - **Homepage section order** — Trust section now appears between Projects and About; old `LandingCredentials` component removed
 - **Projects section split** — featured projects (Studova, Neurotrainer, Harmonie) displayed in a 3-column grid with large cards; remaining projects (EcoRescue, TikTik, Borgia, Portfolio) shown in a compact 4-column "More Projects" grid below
 - **Projects copy** — description updated to reference the institutions and trust section below
-- **Studova**: Use new screenshots to reflect latest improvements
+- **Projects**: Use new screenshots to reflect latest improvements
 
 ### Removed
 
