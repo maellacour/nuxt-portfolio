@@ -18,48 +18,69 @@ tag: Full-Stack, SaaS, Research Platform
 
 <!-- Project gallery -->
 ::projects-gallery
-    :::projects-gallery-image
-    ---
-    name: 2025-10-14.Tasks_kpbiru.png
-    index: 0
-    alt: Tasks Overview
-    ---
-    :::
-    :::projects-gallery-image
-    ---
-    name: 2025-10-14.Flow_mmzflv.png
-    index: 1
-    alt: Flow Designer
-    ---
-    :::
-    :::projects-gallery-image
-    ---
-    name: 2025-10-14.Participants_qoydjc.png
-    index: 2
-    alt: Participants Overview
-    ---
-    :::
-    :::projects-gallery-image
-    ---
-    name: 2025-10-14.Progressions_wnijmr.png
-    index: 3
-    alt: Progressions Overview
-    ---
-    :::
-    :::projects-gallery-image
-    ---
-    name: 2025-10-14.Results_bq5tsc.png
-    index: 4
-    alt: Results Overview
-    ---
-    :::
-    :::projects-gallery-image
-    ---
-    name: 2025-10-14.Participant_Dashboard_hdqlki.png
-    index: 5
-    alt: Participant Dashboard
-    ---
-    :::
+        :::projects-gallery-image
+        ---
+        name: 01-landing.png
+        index: 0
+        alt: Tasks Overview
+        ---
+        :::
+        :::projects-gallery-image
+        ---
+        name: 02-login.png
+        index: 1
+        alt: Flow Designer
+        ---
+        :::
+        :::projects-gallery-image
+        ---
+        name: 03-team-settings.png
+        index: 2
+        alt: Participants Overview
+        ---
+        :::
+        :::projects-gallery-image
+        ---
+        name: 04-flow-editor.png
+        index: 3
+        alt: Progressions Overview
+        ---
+        :::
+        :::projects-gallery-image
+        ---
+        name: 05-participants.png
+        index: 4
+        alt: Results Overview
+        ---
+        :::
+        :::projects-gallery-image
+        ---
+        name: 06-results.png
+        index: 5
+        alt: Participant Dashboard
+        ---
+        :::
+        :::projects-gallery-image
+        ---
+        name: 07-tasks.png
+        index: 6
+        alt: Tasks Overview
+        ---
+        :::
+        :::projects-gallery-image
+        ---
+        name: 08-participant-dashboard-settings.png
+        index: 7
+        alt: Participant Dashboard Settings
+        ---
+        :::
+        :::projects-gallery-image
+        ---
+        name: 09-progressions.png
+        index: 8
+        alt: Progressions Overview
+        ---
+        :::
 ::
 
 ::projects-sections
