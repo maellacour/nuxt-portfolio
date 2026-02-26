@@ -142,7 +142,7 @@ nuxt-portfolio/
 | `nuxt.config.ts` | Modules, SEO, analytics, routeRules, color mode |
 | `app.config.ts` | UI theme (primary color: indigo, gray: zinc), component styles |
 | `tailwind.config.ts` | Custom font (DM Sans) |
-| `.env.example` | Required variables (UI Pro license, Cloudinary, Analytics) |
+| `.env.example` | Required variables (site URL, Cloudinary, Analytics) |
 
 ---
 
@@ -273,7 +273,6 @@ pnpm typecheck
 Copy `.env.example` to `.env` and fill in:
 
 ```env
-NUXT_UI_PRO_LICENSE=xxx          # Nuxt UI Pro license
 NUXT_PUBLIC_SITE_URL=xxx         # Site URL (for SEO)
 CLOUDINARY_CLOUD_NAME=xxx        # Cloudinary cloud name
 CLOUDFLARE_ANALYTICS_TOKEN=xxx   # Analytics token (optional)
