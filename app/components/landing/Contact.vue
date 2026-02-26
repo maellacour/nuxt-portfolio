@@ -39,8 +39,14 @@ defineProps<{
         />
         <div class="mt-6 space-y-4">
           <div class="flex items-center gap-2">
-            <UIcon name="i-heroicons-envelope" class="size-5" />
-            <a :href="`mailto:${global.email}`" class="hover:underline">
+            <UIcon
+              name="i-heroicons-envelope"
+              class="size-5"
+            />
+            <a
+              :href="`mailto:${global.email}`"
+              class="hover:underline"
+            >
               {{ global.email }}
             </a>
           </div>

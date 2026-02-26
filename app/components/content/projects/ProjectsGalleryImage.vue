@@ -16,7 +16,10 @@ const props = defineProps({
 </script>
 
 <template>
-  <div :key="props.index" class="overflow-hidden rounded-xl">
+  <div
+    :key="props.index"
+    class="overflow-hidden rounded-xl"
+  >
     <CldImage
       :src="props.name"
       class="rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 cursor-pointer"

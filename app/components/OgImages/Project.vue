@@ -59,7 +59,7 @@ const backgroundAttrs = computed(() => {
   return {
     style: {
       display: 'flex',
-      position: 'absolute',
+      position: 'absolute' as const,
       width: '100%',
       height: '100%',
       background: 'rgba(51, 132, 173, 1)'
@@ -73,7 +73,7 @@ const backgroundFlareAttrs = computed(() => {
   return {
     style: {
       display: 'flex',
-      position: 'absolute',
+      position: 'absolute' as const,
       left: '-50%',
       bottom: '-10%',
       width: '200%',
@@ -89,7 +89,7 @@ const backgroundFlareTwoAttrs = computed(() => {
   return {
     style: {
       display: 'flex',
-      position: 'absolute',
+      position: 'absolute' as const,
       right: '-30%',
       top: '-40%',
       width: '150%',
@@ -100,7 +100,7 @@ const backgroundFlareTwoAttrs = computed(() => {
 })
 
 const titleAttrs = computed(() => {
-  const classes = []
+  const classes: string[] = []
   const styles = {
     fontWeight: 'bold',
     marginBottom: '50px',
@@ -135,7 +135,7 @@ const siteLogo = computed(() => {
               {{ title || 'Null Title' }}
             </div>
             <div
-              v-if="'description'"
+              v-if="description"
               class="text-2xl text-justify"
             >
               {{ description }}

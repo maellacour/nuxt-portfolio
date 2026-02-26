@@ -2,7 +2,6 @@
   <div class="border-y border-gray-200 dark:border-gray-800 bg-gray-50/50 dark:bg-gray-900/30">
     <UContainer class="py-5">
       <div class="flex flex-col sm:flex-row gap-5 sm:items-center sm:justify-between">
-
         <div class="flex flex-col gap-2">
           <p class="text-xs uppercase tracking-widest text-gray-400 dark:text-gray-500 font-medium">
             Worked with
@@ -40,7 +39,6 @@
             </UBadge>
           </div>
         </div>
-
       </div>
     </UContainer>
   </div>

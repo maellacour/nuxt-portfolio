@@ -53,8 +53,8 @@ const projects = computed(() => {
           <template #header>
             <div class="relative overflow-hidden">
               <CldImage
-                v-if="item.meta?.image"
-                :src="item.meta.image"
+                v-if="item.image"
+                :src="item.image"
                 :alt="item.title || 'Project image'"
                 class="w-full rounded-t-lg aspect-video object-cover group-hover:scale-110 transition-transform duration-500"
                 width="800"

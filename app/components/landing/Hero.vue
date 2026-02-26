@@ -17,7 +17,6 @@ defineProps<{
       links: 'mt-6'
     }"
   >
-
     <template #title>
       <Motion
         :initial="{
@@ -82,7 +81,7 @@ defineProps<{
           class="flex flex-col items-center gap-3"
         >
           <div class="flex items-center gap-2">
-            <UButton v-bind="page.hero.links[0]" />
+            <UButton v-bind="(page.hero.links[0] as any)" />
             <UButton
               :color="global.available ? 'success' : 'error'"
               variant="ghost"
