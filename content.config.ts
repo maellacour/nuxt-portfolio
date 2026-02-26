@@ -30,10 +30,9 @@ export default defineContentConfig({
           title: z.string(),
           description: z.string()
         }),
-        aboutme: z.object({
+        about: z.object({
           title: z.string(),
           description: z.string(),
-          align: z.string(),
           image: z.object({
             name: z.string(),
             alt: z.string()
@@ -42,7 +41,6 @@ export default defineContentConfig({
         contact: z.object({
           title: z.string(),
           description: z.string(),
-          align: z.string(),
           image: z.object({
             name: z.string(),
             alt: z.string()
@@ -58,7 +56,11 @@ export default defineContentConfig({
     }),
     content: defineCollection({
       type: 'page',
-      source: '**/*.md'
+      source: '**/*.md',
+      schema: z.object({
+        image: z.string().optional(),
+        date: z.number().optional()
+      })
     })
   }
 })

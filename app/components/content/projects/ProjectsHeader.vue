@@ -22,11 +22,17 @@ const props = defineProps({
     </h1>
     <div class="flex flex-wrap gap-6 text-sm text-gray-600 dark:text-gray-400">
       <div class="flex items-center gap-2">
-        <UIcon name="i-heroicons-calendar" class="size-5" />
+        <UIcon
+          name="i-heroicons-calendar"
+          class="size-5"
+        />
         <span>{{ props.publishDate }}</span>
       </div>
       <div class="flex items-center gap-2">
-        <UIcon name="i-heroicons-tag" class="size-5" />
+        <UIcon
+          name="i-heroicons-tag"
+          class="size-5"
+        />
         <span>{{ props.tag }}</span>
       </div>
     </div>

@@ -28,6 +28,7 @@ defineOgImageComponent('Home', {
   <UPage v-if="page">
     <LandingHero :page />
     <LandingProjects :page />
+    <LandingTrust />
     <LandingAbout :page />
     <LandingContact :page />
   </UPage>

@@ -35,14 +35,14 @@ export default defineAppConfig({
     credits: `Built with Nuxt UI • © ${new Date().getFullYear()} Mael Lacour`,
     colorMode: false,
     links: [{
-      icon: 'i-simple-icons-linkedin',
-      to: 'https://www.linkedin.com/in/mael-lacour/',
-      target: '_blank',
+      'icon': 'i-simple-icons-linkedin',
+      'to': 'https://www.linkedin.com/in/mael-lacour/',
+      'target': '_blank',
       'aria-label': 'LinkedIn'
     }, {
-      icon: 'i-simple-icons-github',
-      to: 'https://github.com/maellacour',
-      target: '_blank',
+      'icon': 'i-simple-icons-github',
+      'to': 'https://github.com/maellacour',
+      'target': '_blank',
       'aria-label': 'GitHub'
     }]
   }

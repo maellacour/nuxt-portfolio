@@ -1,10 +1,14 @@
 <template>
   <li class="font-general-regular text-ternary-dark dark:text-ternary-light">
     <span>{{ props.title }}: </span>
-    <a href="#" :class="props.title == 'Website' || props.title == 'Phone'
-      ? 'hover:underline cursor-pointer'
-      : ''
-      " aria-label="Project website and phone">{{ props.details }}</a>
+    <a
+      href="#"
+      :class="props.title == 'Website' || props.title == 'Phone'
+        ? 'hover:underline cursor-pointer'
+        : ''
+      "
+      aria-label="Project website and phone"
+    >{{ props.details }}</a>
   </li>
 </template>
 

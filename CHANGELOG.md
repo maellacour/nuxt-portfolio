@@ -5,6 +5,28 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+
+## [1.4.0] - 2026-02-26
+
+### Added
+
+- **Trust section** (`LandingTrust`) — replaces the minimal credentials bar with a full `UPageSection` featuring 6 icon-driven cards (EPFL, UNIGE, HUG, Airbus, Unity Certified Expert, Arts et Métiers ParisTech), a descriptive subtitle, and a bottom CTA linking to the contact section
+- **Projects**: Add Borgia project.
+
+### Changed
+
+- **Homepage section order** — Trust section now appears between Projects and About; old `LandingCredentials` component removed
+- **Projects section split** — featured projects (Studova, Neurotrainer, Harmonie) displayed in a 3-column grid with large cards; remaining projects (EcoRescue, TikTik, Borgia, Portfolio) shown in a compact 4-column "More Projects" grid below
+- **Projects copy** — description updated to reference the institutions and trust section below
+- **Projects**: Use new screenshots to reflect latest improvements
+
+### Removed
+
+- `LandingCredentials` component (superseded by `LandingTrust`)
+
+
 ## [1.3.0] - 2025-10-16
 
 ### Major Refactoring - Nuxt 4 Migration
@@ -133,6 +155,7 @@ Complete modernization of the portfolio using Nuxt 4 best practices and modern U
   - Contact section
   - About Me section
 
+[1.4.0]: https://github.com/Eyap53/nuxt-portfolio/compare/v1.3.0...v1.4.0
 [1.3.0]: https://github.com/Eyap53/nuxt-portfolio/compare/v1.2.0...v1.3.0
 [1.2.0]: https://github.com/Eyap53/nuxt-portfolio/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/Eyap53/nuxt-portfolio/compare/v1.0.0...v1.1.0
