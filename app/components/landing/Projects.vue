@@ -10,13 +10,24 @@ const { data: allContent } = await useAsyncData('projects', () =>
   queryCollection('content').all()
 )
 
-// Filter only project pages from content collection
+const PROJECT_ORDER = ['studova', 'neurotrainer', 'ecorescue', 'harmonie', 'tiktik', 'borgia', 'portfolio']
+
+// Filter only project pages from content collection, sorted by desired order
 const projects = computed(() => {
   if (!allContent.value) return []
-  
-  return allContent.value.filter(item =>
-    item.path?.startsWith('/projects/')
-  )
+
+  return allContent.value
+    .filter(item => item.path?.startsWith('/projects/'))
+    .sort((a, b) => {
+      const aSlug = a.path?.split('/').pop() || ''
+      const bSlug = b.path?.split('/').pop() || ''
+      const aIdx = PROJECT_ORDER.indexOf(aSlug)
+      const bIdx = PROJECT_ORDER.indexOf(bSlug)
+      if (aIdx === -1 && bIdx === -1) return 0
+      if (aIdx === -1) return 1
+      if (bIdx === -1) return -1
+      return aIdx - bIdx
+    })
 })
 </script>
 

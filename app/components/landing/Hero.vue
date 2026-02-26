@@ -87,7 +87,7 @@ defineProps<{
               :color="global.available ? 'success' : 'error'"
               variant="ghost"
               class="gap-2"
-              :label="global.available ? 'Available for new projects' : 'Not available at the moment'"
+              :label="global.available ? 'Available for consulting' : 'Not available at the moment'"
             >
               <template #leading>
                 <span class="relative flex size-2">
