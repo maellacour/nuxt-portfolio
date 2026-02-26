@@ -1,6 +1,6 @@
 ---
 title: 'EcoRescue'
-description: 'An action-like video-game to observe effect on anxiety in adolescents.'
+description: 'Action game for adolescents, built for a University of Geneva anxiety study funded by the SNSF and the European Research Council. Players depollute planets across galaxies — the gameplay data feeds longitudinal research on anxiety and attention.'
 image: EcoRescue.Hero.png
 date: 2022
 ---
@@ -11,7 +11,7 @@ date: 2022
 
 title: EcoRescue
 publishDate: 2022
-tag: Unity 3D, Fast-paced
+tag: Unity · Research · UNIGE
 ---
 
 ::
@@ -71,13 +71,13 @@ tag: Unity 3D, Fast-paced
         Research partner
 
         #details
-        Researcher: Naima Gradi  
-        Position: PhD
+        Researcher: Naima Gradi
+        Position: PhD Fellow
 
-        Professor: Daphne Bavelier  
-        Affiliation: University of Geneva
+        Professor: Daphne Bavelier
+        Affiliation: University of Geneva — Professor of Brain & Cognitive Sciences · ERC Synergy grant holder
 
-        Professor: Swann Pichon  
+        Professor: Swann Pichon
         Affiliation: HES-SO
         ::::
 
@@ -88,6 +88,8 @@ tag: Unity 3D, Fast-paced
 
         #details
         {{ $doc.description }}
+
+        The research hypothesis: fast-paced, positive-valence gameplay could measurably reduce anxiety and improve attention in adolescents over a multi-week intervention. My team at FCBG built the game and the data collection layer — the researchers designed the protocol and interpreted the results.
         ::::
 
 <!-- . Tools & Technologies  -->
@@ -96,7 +98,17 @@ tag: Unity 3D, Fast-paced
         Tools & Technologies
 
         #details
-        Unity, C#, Shaders, HLSL  
+        Unity, C#, Shaders, HLSL
+        ::::
+
+<!-- . Funding -->
+        ::::projects-left-block
+        #title
+        Funding
+
+        #details
+        Swiss National Science Foundation grant (10001C_212812)
+        European Research Council Synergy grant — The Self-Teaching Brain (810580)
         ::::
     :::
 
@@ -106,7 +118,11 @@ tag: Unity 3D, Fast-paced
     Challenge
 
     #details
-    The goal of the game is to challenge the player while depolluting and reforesting planets as one travel across galaxies contaminated by decades of space exploration. EcoRescue was conceptualized and designed by Naima Gradi (PhD fellow), Swann Pichon (HES-SO) and Daphne Bavelier (UNIGE). It was programmed by the FCBG VR & Digital Engineering platform vr.fcbg.ch. EcoRescue was funded by a Swiss National Science Foundation grant (10001C_212812 To SP) and by a European Research Council Synergy grant (the self-teaching brain, 810580 To DB).
+    The core tension: the game had to be genuinely fun for teenagers — or the intervention data would be meaningless. But every session also had to produce clean, structured behavioural records for a longitudinal study. Fun and measurement pull in opposite directions. Solving that meant designing gameplay loops where the data collection was invisible: timed events, accuracy tracking, and session metadata logged continuously without interrupting the experience.
+
+    Technically, this required a statistics and event system that captured task performance at the moment of action — not reconstructed from replay — and serialised it cleanly to formats the research team could ingest directly. Session integrity was non-negotiable: a crashed session with partial data is worse than no session at all.
+
+    The collaboration model with UNIGE and HES-SO shaped how we iterated. Researchers defined the measurement targets; my team at FCBG translated those into game mechanics and instrumentation. Every design decision had both a player rationale and a scientific one.
     :::
 ::
 

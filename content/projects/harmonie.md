@@ -1,6 +1,6 @@
 ---
 title: 'HarMoNie'
-description: 'HarMoNie is a multilingual educational application focused on health education for musicians, developed for the Haute École de Musique (HEM).​'
+description: 'Mobile app for the Haute École de Musique de Genève — multilingual health education for musicians. Prereq-gated lessons, interactive quizzes, photo and video content across FR/EN/DE. Built with Flutter.'
 image: harmonie-hero.png
 date: 2025
 ---
@@ -11,7 +11,7 @@ date: 2025
 
 title: HarMoNie
 publishDate: 2025
-tag: Mobile, Flutter
+tag: Mobile · Flutter · Education
 ---
 
 ::
@@ -43,9 +43,8 @@ tag: Mobile, Flutter
         Partners
 
         #details
-        Haute École de Santé de Genève  
-        Haute École de Musique de Genève  
-        ...
+        Haute École de Santé de Genève
+        Haute École de Musique de Genève
         ::::
 
 <!-- . Objective -->
@@ -55,6 +54,8 @@ tag: Mobile, Flutter
 
         #details
         {{ $doc.description }}
+
+        Musicians face specific occupational health risks — hearing damage, repetitive strain, performance anxiety — that general health resources don't address. HarMoNie gives students a structured, self-paced path through that content, commissioned directly by the HEM faculty.
         ::::
 
 <!-- . Tools & Technologies  -->
@@ -73,9 +74,11 @@ tag: Mobile, Flutter
     Challenge
 
     #details
-    "HarMoNie" is an innovative, multilingual educational application built with Flutter, commissioned by the Haute École de Musique (HEM). The platform's core mission is to provide musicians with comprehensive, structured lessons and interactive exercises focused on crucial health-related topics, fostering a proactive approach to their well-being.
+    The content architecture was the first challenge. Health education for musicians spans multiple topics, each with prerequisites — you don't explain hearing protection before you've established how sound damages tissue. I built a prerequisite graph over the lesson structure so students are only unlocked the content they're ready for, in the right sequence, regardless of language.
 
-    Key technical challenges involved architecting a robust system for managing and localizing diverse educational content—including Markdown, images, and videos—across multiple languages. This included implementing a prerequisite system for lessons to ensure a cohesive learning path, and developing engaging game-like features such as "spot the 7 errors" and quizzes (QCMs) to enhance user interaction and knowledge retention. The application also supports seamless visualization of photos and videos to enrich the educational experience.
+    Localising across French, English, and German meant every piece of content — text, images, embedded video — had to be managed in parallel. I designed a Markdown-based content system that keeps translations co-located and makes it straightforward for non-developers at HEM to update material without touching code.
+
+    The second challenge was engagement. Musicians aren't patients — they don't respond to clinical tone or passive reading. I built game-like features into the learning flow: "spot the 7 errors" exercises and quiz modules that give immediate feedback. The goal was to make the health content feel like part of their craft education, not a compliance requirement.
     :::
 ::
 

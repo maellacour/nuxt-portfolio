@@ -1,6 +1,6 @@
 ---
 title: 'NeuroTrainer'
-description: 'A virtual reality tool for viewing health data from MRI, CT, and similar scanners.'
+description: 'VR tool for neurosurgeons and radiologists at HUG to explore MRI and CT volumes in real time. Custom HLSL shader for 3D texture rendering; streaming architecture to handle 100 GB+ datasets without VR latency.'
 image: neurotrainer.1_ozaifn.png
 date: 2022
 ---
@@ -11,7 +11,7 @@ date: 2022
 
 title: NeuroTrainer
 publishDate: 2022
-tag: Unity 3D, VR, MRI
+tag: VR · Unity · Medical Imaging
 ---
 
 ::
@@ -47,11 +47,11 @@ tag: Unity 3D, VR, MRI
 <!-- . Partner -->
         ::::projects-left-block
         #title
-        Research partner
+        Clinical partner
 
         #details
-        Researcher: Daniel Kiss  
-        Affiliation: HUG
+        Researcher: Daniel Kiss
+        Affiliation: HUG — Hôpitaux Universitaires de Genève
         ::::
 
 <!-- . Objective -->
@@ -61,6 +61,8 @@ tag: Unity 3D, VR, MRI
 
         #details
         {{ $doc.description }}
+
+        The clinical workflow before this tool required radiologists to interpret flat 2D slices on standard monitors. In VR, the same data becomes navigable in three dimensions — changing both how anatomy is taught and how surgical approaches are planned.
         ::::
 
 <!-- . Tools & Technologies  -->
@@ -69,7 +71,7 @@ tag: Unity 3D, VR, MRI
         Tools & Technologies
 
         #details
-        Unity, C#, Shaders, HLSL  
+        Unity, C#, Shaders, HLSL
         ::::
     :::
 
@@ -79,9 +81,13 @@ tag: Unity 3D, VR, MRI
     Challenge
 
     #details
-    This project presented two major challenges. The first is the display of IRM data, which is presented as a "3D Texture" of sorts. This required the creation of a specific HLSL shader for this data.
+    Two problems defined this project.
 
-    The second challenge concerns the volume of data. An MRI scanner can very easily reach a hundred GB, so it's important to split up the data to avoid lags, which are very annoying in VR.
+    **Rendering MRI volumes in VR.** MRI and CT data isn't a stack of images — it's a 3D texture that needs to be sampled along arbitrary ray paths in real time. No standard Unity shader handles this. I wrote a custom HLSL shader that performs direct volume rendering: ray-casting through the 3D texture, compositing density values into colour, and mapping transfer functions for contrast. Getting it to run at 90 fps in VR, on hardware a hospital could actually buy, required careful optimisation of the sampling step and early-exit conditions.
+
+    **Streaming datasets without lag.** A single MRI scan can exceed 100 GB. Loading it into memory isn't an option in VR — a frame drop at the wrong moment causes immediate nausea. I built a streaming architecture that loads volumetric slabs on demand, pre-fetching the next region by spatial proximity before it's needed. The result: continuous navigation through the full dataset with no perceptible load stutter.
+
+    Building for VR in a clinical context taught me something about constraints: the hardware ceiling is low, the tolerance for error is zero, and the people using it have no patience for UX that gets in the way of their work.
     :::
 ::
 

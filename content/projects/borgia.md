@@ -1,6 +1,6 @@
 ---
 title: 'Borgia'
-description: 'Web logistics and payment management platform built by 4 engineering students, actively used by 1,000+ students across 4 ENSAM campuses in Paris, Lille, Angers, and Metz.'
+description: 'Web platform for logistics and payments across 4 ENSAM campuses. Built by 4 engineering students — deployed and actively used at scale by 1,000+ students across Paris, Lille, Angers, and Metz.'
 image: borgia_landing_cciyco.png
 date: 2016
 ---
@@ -39,6 +39,6 @@ tag: Web, Django, Production-scale
     What made it special
 
     #details
-    This wasn't a student prototype that lived only in a graded submission — it was deployed, maintained, and actively used at scale by the student community. Managing real financial transactions and logistics for thousands of users at multiple sites required building for reliability, not just for grades. It was an early lesson in what production software actually means: ownership, edge cases, and accountability.
+    This wasn't a student prototype that lived only in a graded submission — it was deployed, maintained, and actively used at scale by the student community. Managing real financial transactions and logistics for thousands of users at multiple sites required building for reliability, not just for a grade. It was an early lesson in what production software actually means: ownership, edge cases, and accountability.
     :::
 ::

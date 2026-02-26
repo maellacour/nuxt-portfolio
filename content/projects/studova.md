@@ -1,6 +1,6 @@
 ---
 title: 'Studova'
-description: 'A comprehensive SaaS platform for researchers to design, deploy, and manage cognitive and behavioral studies with flexible data collection, participant tracking, and team collaboration capabilities.'
+description: 'A SaaS platform I built from scratch for research teams to design, deploy, and analyse cognitive and behavioural studies. Visual flow editor, dynamic data schemas, multi-tenant architecture.'
 image: Studova-hero_p7swln.png
 date: 2024
 ---
@@ -11,7 +11,7 @@ date: 2024
 
 title: Studova
 publishDate: 2025
-tag: Full-Stack, SaaS, Research Platform
+tag: SaaS · Full-Stack · Research Tooling
 ---
 
 ::
@@ -92,7 +92,7 @@ tag: Full-Stack, SaaS, Research Platform
         Project Type
 
         #details
-        Personal SaaS Platform  
+        Personal SaaS Platform
         Research & Development
         ::::
 
@@ -113,7 +113,7 @@ tag: Full-Stack, SaaS, Research Platform
         #details
         {{ $doc.description }}
 
-        The platform serves as a complete solution for research teams to collaborate on studies, manage participants, collect diverse data types, and analyze results—all while maintaining data integrity and supporting complex study workflows.
+        It fills the gap between generic survey tools and bespoke lab software — a structured, collaborative environment researchers can configure without writing code.
         ::::
 
 <!-- . Tools & Technologies  -->
@@ -122,9 +122,9 @@ tag: Full-Stack, SaaS, Research Platform
         Tools & Technologies
 
         #details
-        **Frontend:** Next.js, React, TypeScript, Tailwind CSS, DaisyUI  
-        **Backend:** Next.js API Routes, Prisma ORM, PostgreSQL  
-        **Infrastructure:** Neon, Vercel, Docker  
+        **Frontend:** Next.js, React, TypeScript, Tailwind CSS, DaisyUI
+        **Backend:** Next.js API Routes, Prisma ORM, PostgreSQL
+        **Infrastructure:** Neon, Vercel, Docker
         ::::
 
 <!-- . Key Metrics -->
@@ -149,25 +149,16 @@ tag: Full-Stack, SaaS, Research Platform
     Challenge
 
     #details
-    Building a comprehensive SaaS platform for research studies required solving complex technical challenges while maintaining usability for non-technical researchers.
+    The core problem: research studies have wildly different shapes. A cognitive test, a survey battery, and a longitudinal tracking protocol share almost no structure. The platform had to enforce reproducibility without constraining what a researcher could design.
 
-    **Key Features Implemented:**
-    - **Visual Flow Designer**: Drag-and-drop interface for creating study workflows with branching logic and randomization
-    - **Flexible Data Collection**: Dynamic schema validation supporting diverse task types (surveys, cognitive tests, behavioral assessments)
-    - **Multi-tenant Architecture**: Team-based isolation with role-based permissions
-    - **Participant Tracking**: Real-time progression monitoring with visual status indicators
-    - **Advanced Analytics**: JSON-indexed queries for efficient result aggregation
+    Three decisions defined the architecture.
 
-    **Core Technical Solutions:**
+    **Graph-based flow engine.** Study workflows aren't linear — they branch, randomise, and loop. I implemented a directed graph using FlowElements and FlowLinks, with a traversal algorithm that validates path integrity from START to END before a study can launch. Any broken flow is caught at design time, not mid-session.
 
-    **1. Graph-Based Flow Architecture**  
-    Implemented a directed graph structure using FlowElements and FlowLinks to enable researchers to create complex study workflows. Developed a graph traversal algorithm to determine execution order and validate flow integrity, ensuring participants always have a valid path from START to END.
+    **Dynamic schema validation.** Each task type collects different data. A rigid relational model would require a migration for every new task. Instead, I combined typed ResultVariable models with PostgreSQL JSON columns and GIN indexing — type safety and query performance without the migration overhead. Zod schemas are generated at runtime from the stored metadata.
 
-    **2. Dynamic Schema Validation**  
-    Designed a hybrid approach combining ResultVariable models (defining data structure with metadata) and JSON storage with PostgreSQL GIN indexing. This achieved schema flexibility without migration overhead while maintaining type safety and query performance through runtime Zod schema generation.
+    **Results visualisation with accessibility.** Displaying participant progress across arbitrary task sequences required ordering columns by flow position, not insertion order. I built a colour-coded and pattern system (colour for completed, hatched for pending) so the view works for colour-blind researchers. Small detail — high stakes in a clinical context.
 
-    **3. Results Visualization**  
-    Created an intuitive color-coded system for displaying participant progress—colored cells for completed tasks, grey + hatched pattern for pending ones. Ordered task columns by flow sequence and designed visual legends with accessibility considerations (pattern + color).
-
+    It proved that a solo engineer can ship a production-grade research tool, if the architecture decisions are right from day one.
     :::
 ::

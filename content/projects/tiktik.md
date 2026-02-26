@@ -1,6 +1,6 @@
 ---
 title: 'TikTik'
-description: 'A 2D multiplayer game where players needs to cooperate to solve puzzles.'
+description: 'Cooperative 2D puzzle game for a cognitive science study at the University of Geneva. Built in Unity with local multiplayer, controller support, a replay system for researchers, and a custom level editor.'
 image: tiktik.hero.png
 date: 2023
 ---
@@ -11,7 +11,7 @@ date: 2023
 
 title: TikTik
 publishDate: 2023
-tag: Unity 3D, Puzzle, Multiplayer
+tag: Unity · Multiplayer · Cognitive Research
 ---
 
 ::
@@ -47,11 +47,13 @@ tag: Unity 3D, Puzzle, Multiplayer
 <!-- . Partner -->
         ::::projects-left-block
         #title
-        Research partner
+        Research context
 
         #details
-        Researcher: Cvetomir Dimov  
+        Researcher: Cvetomir Dimov
         Affiliation: University of Geneva
+
+        The study examines cooperative decision-making — how pairs of players communicate, adapt, and solve problems together under time pressure.
         ::::
 
 <!-- . Objective -->
@@ -60,7 +62,9 @@ tag: Unity 3D, Puzzle, Multiplayer
         Objectives
 
         #details
-        {{ $doc.description }} 
+        {{ $doc.description }}
+
+        For the researcher, it had to capture precise event data on cooperative decision-making. For the players, it had to feel like a real game — not a test. Those two requirements drove every design decision.
         ::::
 
 <!-- . Tools & Technologies  -->
@@ -69,7 +73,7 @@ tag: Unity 3D, Puzzle, Multiplayer
         Tools & Technologies
 
         #details
-        Unity, C#, Server, Azure  
+        Unity, C#, Server, Azure
         ::::
     :::
 
@@ -79,10 +83,13 @@ tag: Unity 3D, Puzzle, Multiplayer
     Challenge
 
     #details
-    I worked as the project manager for this Unity project. It was a rewarding yet challenging experience, and we experimented with a few collaborative methods that were successfull, including the use of notion and some git and dev practices. With a team of three, our efforts were distributed effectively: one colleague focused on design and UI effects, bringing visual elements to life with stunning effects; another dedicated their time to crafting a particle system for the beams and an intricate replay system that added a visual feedback for the researcher. 
-    
-    My responsibilities included implementing player interaction mechanics, laying the groundwork for seamless level play, and developing tools for efficient level creation. 
-    Additionally, I tackled the complexities of local multiplayer functionality (and currently working on online multiplayer), ensuring smooth controller support. Managing the data and player account system, along with a log-in and level progression, added another layer of complexity, requiring meticulous attention to detail to maintain security and user experience.
+    I led a team of three on this project. We divided scope clearly: one colleague handled visual effects and UI; another built the particle system and a replay system that gave researchers a visual timeline of each session. I handled core gameplay systems.
+
+    Local multiplayer in Unity requires careful input routing — each controller needs its own player instance with no shared state. I built the input layer from scratch, handling controller assignment, disconnection recovery, and split-screen coordination. Level data is serialised to JSON and loaded at runtime, which meant building a level editor that non-programmers on the research team could use to create new puzzle configurations without touching code.
+
+    The replay system was the subtlest challenge. It needed to be accurate enough for a researcher to reconstruct exactly what each player did and when — frame-level event logging, not a video. Getting the data model right so it was both faithful and compact took several iterations.
+
+    The project demonstrated what it means to build for a dual audience: players who need to be engaged, and researchers who need the data to be clean.
     :::
 ::
 
