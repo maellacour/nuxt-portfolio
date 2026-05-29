@@ -1,6 +1,6 @@
 ---
 title: 'TikTik'
-description: 'Cooperative 2D puzzle game for a cognitive science study at the University of Geneva. Built in Unity with local multiplayer, controller support, a replay system for researchers, and a custom level editor.'
+description: 'Cooperative 2D puzzle game for a cognitive science study at the University of Geneva. Built in Unity with local/online multiplayer, voice chat, controller support, a replay system for researchers, and a custom level editor.'
 image: tiktik.hero.png
 date: 2023
 ---
@@ -11,7 +11,7 @@ date: 2023
 
 title: TikTik
 publishDate: 2023
-tag: Unity · Multiplayer · Cognitive Research
+tag: Unity · Local/Online Multiplayer · Cognitive Research
 ---
 
 ::
@@ -73,23 +73,25 @@ tag: Unity · Multiplayer · Cognitive Research
         Tools & Technologies
 
         #details
-        Unity, C#, Server, Azure
+        Unity, C#, Unity Netcode, Unity Relay, Vivox, Parse (server), Azure
         ::::
     :::
-
 <!-- . Challenge -->
     :::projects-right-section
     #title
     Challenge
-
     #details
-    I led a team of three on this project. We divided scope clearly: one colleague handled visual effects and UI; another built the particle system and a replay system that gave researchers a visual timeline of each session. I handled core gameplay systems.
+    I led a team of three on this project, managing scope and architecture across three years of active development. One colleague handled visual effects and UI; another built the particle system and the initial replay system. I owned core gameplay, multiplayer infrastructure, and the research data pipeline.
 
-    Local multiplayer in Unity requires careful input routing — each controller needs its own player instance with no shared state. I built the input layer from scratch, handling controller assignment, disconnection recovery, and split-screen coordination. Level data is serialised to JSON and loaded at runtime, which meant building a level editor that non-programmers on the research team could use to create new puzzle configurations without touching code.
+    The project grew from a local multiplayer prototype into a fully online cooperative experience. Online multiplayer introduced a different class of problems: session management, relay-based connectivity, role assignment (Fire/Ice), and synchronising game state across unreliable connections. I integrated Unity Netcode and Unity Relay, then layered Vivox voice chat on top — with per-session channels and voice recording capture tied to the replay timeline.
 
-    The replay system was the subtlest challenge. It needed to be accurate enough for a researcher to reconstruct exactly what each player did and when — frame-level event logging, not a video. Getting the data model right so it was both faithful and compact took several iterations.
+    The replay system is the core research instrument. It records frame-level player positions, blocking states, and voice audio, all stamped in UTC and uploaded to a Parse backend with retry logic and conflict resolution. Researchers can reconstruct exactly what each player did, said, and when — down to the frame. Getting the data model right so it was both faithful and resilient took many iterations, particularly around edge cases in multiplayer session initialisation.
 
-    The project demonstrated what it means to build for a dual audience: players who need to be engaged, and researchers who need the data to be clean.
+    The level editor was built so researchers could author new puzzle configurations without touching code — JSON-driven level maps, loaded at runtime, editable through a custom in-engine tool.
+
+    The project has since attracted interest beyond the lab: it is currently being evaluated as an assessment task by an HR company, which introduced a new set of requirements around user management, database isolation, and deployment for non-research contexts.
+
+    Throughout, the central tension was the same: players who need to be engaged, and researchers who need the data to be clean.
     :::
 ::
 
